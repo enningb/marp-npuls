@@ -2,321 +2,529 @@
 marp: true
 theme: npuls
 paginate: false
+footer: Npuls · Asset Referentie
 ---
-
-<!--
-  ILLUSTRATIES & VORMENTAAL REFERENTIE
-  Gebruik dit bestand als visueel naslagwerk voor alle beschikbare assets.
-
-  Gebruik:
-    marp --theme ../themes/npuls.css --allow-local-files illustraties-referentie.md
--->
 
 <!-- _class: cover -->
 
-# Illustraties & Vormentaal
-## Asset referentieoverzicht
+# Asset Referentie
+## Illustraties · Sectordoelen · Vormentaal · Logo's
 
-Npuls Huisstijl 2025
+Overzicht van alle beschikbare afbeeldingen met kopieerbare URLs.
+
+---
+
+<!-- _class: section-title -->
+
+# Gebruik
+
+---
+
+# URL gebruiken in een slide
+
+Kopieer de URL uit het grijze blok en gebruik als `src`:
+
+```markdown
+<img src="URL" class="illustration" />
+```
+
+Of als Markdown afbeelding:
+
+```markdown
+![](URL)
+```
+
+Beschikbare klassen: `illustration` · `illustration-sm` · `illustration-lg` ·
+`illustration-fill` · `rounded` · `rounded-lg` · `img-tile blue`
 
 ---
 
 <!-- _class: section-title -->
 
 # Illustraties
-## Isometrisch · meerdere kleuren · zwarte lijn
 
 ---
 
-# Mensen & rollen
-
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Lerende.png" class="illustration-sm" />
-<span>Lerende</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/AI%20en%20brein.png)
+**AI en brein**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/AI%20en%20brein.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Onderwijsprofessional.png" class="illustration-sm" />
-<span>Onderwijsprofessional</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/AI.png)
+**AI**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/AI.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Bestuurder.png" class="illustration-sm" />
-<span>Bestuurder</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/AIverordening.png)
+**AIverordening**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/AIverordening.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Man.png" class="illustration-sm" />
-<span>Man</span>
-</div>
-</div>
-
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Dame oranje blauw.png" class="illustration-sm" />
-<span>Dame oranje blauw</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Dame blauw pak.png" class="illustration-sm" />
-<span>Dame blauw pak</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Man in rolstoel.png" class="illustration-sm" />
-<span>Man in rolstoel</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Dokter.png" class="illustration-sm" />
-<span>Dokter</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Agenda.png)
+**Agenda**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Agenda.png`
 </div>
 </div>
 
 ---
 
-# Samenwerking & communicatie
-
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Handen.png" class="illustration-sm" />
-<span>Handen</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Bestuurder.png)
+**Bestuurder**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Bestuurder.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Gesprek.png" class="illustration-sm" />
-<span>Gesprek</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Blokken%20stapel.png)
+**Blokken stapel**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Blokken%20stapel.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Kennisdeling.png" class="illustration-sm" />
-<span>Kennisdeling</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boek%20puzzelstuk.png)
+**Boek puzzelstuk**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boek%20puzzelstuk.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Connecties.png" class="illustration-sm" />
-<span>Connecties</span>
-</div>
-</div>
-
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Kennishub.png" class="illustration-sm" />
-<span>Kennishub</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Presenteren.png" class="illustration-sm" />
-<span>Presenteren</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Combineren.png" class="illustration-sm" />
-<span>Combineren</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/participatie.png" class="illustration-sm" />
-<span>Participatie</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken%20blauw%20roze%20blauw.png)
+**Boeken blauw roze blauw**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken%20blauw%20roze%20blauw.png`
 </div>
 </div>
 
 ---
 
-# Technologie & digitaal
-
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Laptop.png" class="illustration-sm" />
-<span>Laptop</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken%20blauw%20roze%20groen.png)
+**Boeken blauw roze groen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken%20blauw%20roze%20groen.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Laptop met beeld.png" class="illustration-sm" />
-<span>Laptop met beeld</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken%20roze%20blauw.png)
+**Boeken roze blauw**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken%20roze%20blauw.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Laptopman.png" class="illustration-sm" />
-<span>Laptopman</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken.png)
+**Boeken**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Pc.png" class="illustration-sm" />
-<span>PC</span>
-</div>
-</div>
-
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Servers.png" class="illustration-sm" />
-<span>Servers</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/VR.png" class="illustration-sm" />
-<span>VR</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/EdTech.png" class="illustration-sm" />
-<span>EdTech</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Video.png" class="illustration-sm" />
-<span>Video</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boom.png)
+**Boom**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boom.png`
 </div>
 </div>
 
 ---
 
-# AI & data
-
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/illustraties/png/AI.png" class="illustration-sm" />
-<span>AI</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Brein.png)
+**Brein**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Brein.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/AI en brein.png" class="illustration-sm" />
-<span>AI en brein</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Cadeau.png)
+**Cadeau**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Cadeau.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/AIverordening.png" class="illustration-sm" />
-<span>AI-verordening</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Cirkel%20grafisch.png)
+**Cirkel grafisch**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Cirkel%20grafisch.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Data.png" class="illustration-sm" />
-<span>Data</span>
-</div>
-</div>
-
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Brein.png" class="illustration-sm" />
-<span>Brein</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Learning analytics.png" class="illustration-sm" />
-<span>Learning analytics</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/analyse.png" class="illustration-sm" />
-<span>Analyse</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Digitale leermaterialen.png" class="illustration-sm" />
-<span>Digitale leermaterialen</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Combineren.png)
+**Combineren**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Combineren.png`
 </div>
 </div>
 
 ---
 
-# Kennis & onderwijs
-
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Boeken.png" class="illustration-sm" />
-<span>Boeken</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Connecties.png)
+**Connecties**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Connecties.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Boeken blauw roze groen.png" class="illustration-sm" />
-<span>Boeken blauw/groen</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Dame%20blauw%20pak.png)
+**Dame blauw pak**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Dame%20blauw%20pak.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Boek puzzelstuk.png" class="illustration-sm" />
-<span>Boek puzzelstuk</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Dame%20oranje%20blauw.png)
+**Dame oranje blauw**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Dame%20oranje%20blauw.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Hoed.png" class="illustration-sm" />
-<span>Hoed</span>
-</div>
-</div>
-
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Agenda.png" class="illustration-sm" />
-<span>Agenda</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Document.png" class="illustration-sm" />
-<span>Document</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Lamp.png" class="illustration-sm" />
-<span>Lamp (idee)</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Puzzelstuk 3D.png" class="illustration-sm" />
-<span>Puzzelstuk 3D</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Data.png)
+**Data**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Data.png`
 </div>
 </div>
 
 ---
 
-# Strategie & proces
-
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/illustraties/png/doel.png" class="illustration-sm" />
-<span>Doel</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Digitale%20leermaterialen.png)
+**Digitale leermaterialen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Digitale%20leermaterialen.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Verrekijker.png" class="illustration-sm" />
-<span>Verrekijker</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Document.png)
+**Document**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Document.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Boom.png" class="illustration-sm" />
-<span>Boom (groei)</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Dokter.png)
+**Dokter**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Dokter.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/kansen.png" class="illustration-sm" />
-<span>Kansen</span>
-</div>
-</div>
-
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/illustraties/png/procedure.png" class="illustration-sm" />
-<span>Procedure</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Blokken stapel.png" class="illustration-sm" />
-<span>Blokken stapel</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Pijlen rechts grafisch.png" class="illustration-sm" />
-<span>Pijlen rechts</span>
-</div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Sleutel.png" class="illustration-sm" />
-<span>Sleutel</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/EdTech.png)
+**EdTech**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/EdTech.png`
 </div>
 </div>
 
 ---
 
-# Overig
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Financien.png)
+**Financien**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Financien.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Gebouw%20blauw%20en%20roze%20dak.png)
+**Gebouw blauw en roze dak**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Gebouw%20blauw%20en%20roze%20dak.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Gebouw%20blauw%20met%20boom.png)
+**Gebouw blauw met boom**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Gebouw%20blauw%20met%20boom.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Gesprek.png)
+**Gesprek**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Gesprek.png`
+</div>
+</div>
+
+---
 
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/illustraties/png/Globe.png" class="illustration-sm" />
-<span>Globe</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Globe.png)
+**Globe**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Globe.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Schoolgebouw.png" class="illustration-sm" />
-<span>Schoolgebouw</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Golven.png)
+**Golven**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Golven.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Locatie.png" class="illustration-sm" />
-<span>Locatie</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Handen.png)
+**Handen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Handen.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Financien.png" class="illustration-sm" />
-<span>Financiën</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Hoed.png)
+**Hoed**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Hoed.png`
 </div>
 </div>
 
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/illustraties/png/balans.png" class="illustration-sm" />
-<span>Balans</span>
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Kennisdeling.png)
+**Kennisdeling**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Kennisdeling.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/spiegelen.png" class="illustration-sm" />
-<span>Spiegelen</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Kennishub.png)
+**Kennishub**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Kennishub.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/plusenmin.png" class="illustration-sm" />
-<span>Plus en min</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Lamp.png)
+**Lamp**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Lamp.png`
 </div>
-<div class="icon-card">
-<img src="../assets/illustraties/png/Cadeau.png" class="illustration-sm" />
-<span>Cadeau</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Laptop%20leeg%20beeld.png)
+**Laptop leeg beeld**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Laptop%20leeg%20beeld.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Laptop%20met%20beeld.png)
+**Laptop met beeld**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Laptop%20met%20beeld.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Laptop.png)
+**Laptop**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Laptop.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Laptopman.png)
+**Laptopman**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Laptopman.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Learning%20analytics.png)
+**Learning analytics**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Learning%20analytics.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Lerende.png)
+**Lerende**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Lerende.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Locatie.png)
+**Locatie**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Locatie.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Locatiepin.png)
+**Locatiepin**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Locatiepin.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/MC%20Vaantje.png)
+**MC Vaantje**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/MC%20Vaantje.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Man%20in%20rolstoel.png)
+**Man in rolstoel**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Man%20in%20rolstoel.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Man.png)
+**Man**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Man.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Onderwijsprofessional.png)
+**Onderwijsprofessional**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Onderwijsprofessional.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pakket%20compact.png)
+**Pakket compact**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pakket%20compact.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pc.png)
+**Pc**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pc.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pijlen%20naar%20elkaar.png)
+**Pijlen naar elkaar**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pijlen%20naar%20elkaar.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pijlen%20rechts%20grafisch.png)
+**Pijlen rechts grafisch**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pijlen%20rechts%20grafisch.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pijlen%20roze%20rechts.png)
+**Pijlen roze rechts**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Pijlen%20roze%20rechts.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Presenteren.png)
+**Presenteren**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Presenteren.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Puzzelstuk%202D.png)
+**Puzzelstuk 2D**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Puzzelstuk%202D.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Puzzelstuk%203D.png)
+**Puzzelstuk 3D**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Puzzelstuk%203D.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Schoolgebouw.png)
+**Schoolgebouw**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Schoolgebouw.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Servers.png)
+**Servers**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Servers.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Sleutel.png)
+**Sleutel**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Sleutel.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Ster%20geel.png)
+**Ster geel**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Ster%20geel.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Ster%20oranje.png)
+**Ster oranje**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Ster%20oranje.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Stip%20geel.png)
+**Stip geel**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Stip%20geel.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Stopwatch.png)
+**Stopwatch**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Stopwatch.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/VR.png)
+**VR**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/VR.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Vaantje%20geel%20met%20vink.png)
+**Vaantje geel met vink**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Vaantje%20geel%20met%20vink.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Vaantje%20oranje.png)
+**Vaantje oranje**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Vaantje%20oranje.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Verrekijker.png)
+**Verrekijker**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Verrekijker.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Video.png)
+**Video**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Video.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/analyse.png)
+**analyse**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/analyse.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/balans.png)
+**balans**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/balans.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/doel.png)
+**doel**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/doel.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/kansen.png)
+**kansen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/kansen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/participatie.png)
+**participatie**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/participatie.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/plusenmin.png)
+**plusenmin**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/plusenmin.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/procedure.png)
+**procedure**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/procedure.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/slot.png)
+**slot**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/slot.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/spiegelen.png)
+**spiegelen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/spiegelen.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/verledentoekomst.png)
+**verledentoekomst**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/verledentoekomst.png`
 </div>
 </div>
 
@@ -325,115 +533,352 @@ Npuls Huisstijl 2025
 <!-- _class: section-title -->
 
 # Sectordoelen
-## 27 afbeeldingen voor sectordoelen
+## Oorspronkelijke set (transparante PNG)
 
 ---
-
-# Sectordoelen 01 – 09
-
-<div class="columns-3">
-<div class="icon-card">
-<img src="../assets/sectordoelen/01 - Identiteit.jpg" class="illustration-sm" />
-<span class="small">01 · Identiteit</span>
-</div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/02 - Onderwijsaanbod.jpg" class="illustration-sm" />
-<span class="small">02 · Onderwijsaanbod</span>
-</div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/03 - Curriculuminformatie.jpg" class="illustration-sm" />
-<span class="small">03 · Curriculuminformatie</span>
-</div>
-</div>
-
-<div class="columns-3" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/sectordoelen/04 - Aanmelden Inschrijven Intekenen.jpg" class="illustration-sm" />
-<span class="small">04 · Aanmelden</span>
-</div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/05 - Resultaten en Credentials.jpg" class="illustration-sm" />
-<span class="small">05 · Credentials</span>
-</div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/06 - Verrekenen.jpg" class="illustration-sm" />
-<span class="small">06 · Verrekenen</span>
-</div>
-</div>
-
----
-
-# Sectordoelen 07 – 15
-
-<div class="columns-3">
-<div class="icon-card">
-<img src="../assets/sectordoelen/07 - Digitale geletterdheid lerenden.jpg" class="illustration-sm" />
-<span class="small">07 · Digitale geletterdheid</span>
-</div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/08 - Omgaan met AI, data en educatieve technologieen.jpg" class="illustration-sm" />
-<span class="small">08 · AI, data & EdTech</span>
-</div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/09 - Generatieve AI.jpg" class="illustration-sm" />
-<span class="small">09 · Generatieve AI</span>
-</div>
-</div>
-
-<div class="columns-3" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/sectordoelen/10 - Kleine eenheden onderwijs.jpg" class="illustration-sm" />
-<span class="small">10 · Kleine eenheden</span>
-</div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/11 - Ondersteuning onderwijsprofessionals.jpg" class="illustration-sm" />
-<span class="small">11 · Ondersteuning profs</span>
-</div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/12 - Ondersteuning bij AI.jpg" class="illustration-sm" />
-<span class="small">12 · Ondersteuning AI</span>
-</div>
-</div>
-
----
-
-# Sectordoelen 16 – 27
 
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/sectordoelen/16 - Community's.jpg" class="illustration-sm" />
-<span class="small">16 · Community's</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/01%20-%20Identiteit.png)
+**01 — Identiteit**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/01%20-%20Identiteit.png`
 </div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/17 - Onderzoeksprojecten.jpg" class="illustration-sm" />
-<span class="small">17 · Onderzoek</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/02%20-%20Onderwijsaanbod.png)
+**02 — Onderwijsaanbod**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/02%20-%20Onderwijsaanbod.png`
 </div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/18 - Collectieve voorziening leermaterialen.jpg" class="illustration-sm" />
-<span class="small">18 · Leermaterialen</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/03%20-%20Curriculuminformatie.png)
+**03 — Curriculuminformatie**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/03%20-%20Curriculuminformatie.png`
 </div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/21 - Gezamenlijk transformeren.jpg" class="illustration-sm" />
-<span class="small">21 · Transformeren</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/04%20-%20Aanmelden%20Inschrijven%20Intekenen.png)
+**04 — Aanmelden Inschrijven Intekenen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/04%20-%20Aanmelden%20Inschrijven%20Intekenen.png`
 </div>
 </div>
 
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/sectordoelen/22 - Verandervaardigheid in instellingen.jpg" class="illustration-sm" />
-<span class="small">22 · Verandervaardigheid</span>
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/05%20-%20Resultaten%20en%20Credentials.png)
+**05 — Resultaten en Credentials**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/05%20-%20Resultaten%20en%20Credentials.png`
 </div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/24 - Monitoring transformatie.jpg" class="illustration-sm" />
-<span class="small">24 · Monitoring</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/06%20-%20Verrekenen.png)
+**06 — Verrekenen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/06%20-%20Verrekenen.png`
 </div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/26 - Digitale sectorvoorzieningen.jpg" class="illustration-sm" />
-<span class="small">26 · Sectorvoorzieningen</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/07%20-%20Digitale%20geletterdheid%20lerenden.png)
+**07 — Digitale geletterdheid lerenden**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/07%20-%20Digitale%20geletterdheid%20lerenden.png`
 </div>
-<div class="icon-card">
-<img src="../assets/sectordoelen/27 - Kennisinfrastructuur.jpg" class="illustration-sm" />
-<span class="small">27 · Kennisinfrastructuur</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/08%20-%20Omgaan%20met%20AI%2C%20data%20en%20educatieve%20technologieen.png)
+**08 — Omgaan met AI, data en educatieve technologieen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/08%20-%20Omgaan%20met%20AI%2C%20data%20en%20educatieve%20technologieen.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/09%20-%20Generatieve%20AI.png)
+**09 — Generatieve AI**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/09%20-%20Generatieve%20AI.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/10%20-%20Kleine%20eenheden%20onderwijs.png)
+**10 — Kleine eenheden onderwijs**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/10%20-%20Kleine%20eenheden%20onderwijs.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/11%20-%20Ondersteuning%20onderwijsprofessionals.png)
+**11 — Ondersteuning onderwijsprofessionals**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/11%20-%20Ondersteuning%20onderwijsprofessionals.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/12%20-%20Ondersteuning%20bij%20AI.png)
+**12 — Ondersteuning bij AI**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/12%20-%20Ondersteuning%20bij%20AI.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/13%20-%20%28Studie%29data.png)
+**13 — (Studie)data**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/13%20-%20%28Studie%29data.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/14%20-%20Digitaal%20toetsen.png)
+**14 — Digitaal toetsen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/14%20-%20Digitaal%20toetsen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/15%20-%20CTL.png)
+**15 — CTL**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/15%20-%20CTL.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/16%20-%20Community%27s.png)
+**16 — Community's**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/16%20-%20Community%27s.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/17%20-%20Onderzoeksprojecten.png)
+**17 — Onderzoeksprojecten**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/17%20-%20Onderzoeksprojecten.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/18%20-%20Collectieve%20voorziening%20leermaterialen.png)
+**18 — Collectieve voorziening leermaterialen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/18%20-%20Collectieve%20voorziening%20leermaterialen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/19%20-%20Samenwerking%20leveranciers%20en%20onderwijssector.png)
+**19 — Samenwerking leveranciers en onderwijssector**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/19%20-%20Samenwerking%20leveranciers%20en%20onderwijssector.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/20%20-%20Afsprakenstelsel%20leermaterialen%20en%20educatieve%20technologieen.png)
+**20 — Afsprakenstelsel leermaterialen en educatieve technologieen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/20%20-%20Afsprakenstelsel%20leermaterialen%20en%20educatieve%20technologieen.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/21%20-%20Gezamenlijk%20transformeren.png)
+**21 — Gezamenlijk transformeren**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/21%20-%20Gezamenlijk%20transformeren.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/22%20-%20Verandervaardigheid%20in%20instellingen.png)
+**22 — Verandervaardigheid in instellingen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/22%20-%20Verandervaardigheid%20in%20instellingen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/23%20-%20Wet-%20en%20regelgeving.png)
+**23 — Wet- en regelgeving**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/23%20-%20Wet-%20en%20regelgeving.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/24%20-%20Monitoring%20transformatie.png)
+**24 — Monitoring transformatie**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/24%20-%20Monitoring%20transformatie.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/25%20-%20Processen%20en%20beleid.png)
+**25 — Processen en beleid**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/25%20-%20Processen%20en%20beleid.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/26%20-%20Digitale%20sectorvoorzieningen.png)
+**26 — Digitale sectorvoorzieningen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/26%20-%20Digitale%20sectorvoorzieningen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/27%20-%20Kennisinfrastructuur.png)
+**27 — Kennisinfrastructuur**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/27%20-%20Kennisinfrastructuur.png`
+</div>
+</div>
+
+---
+
+<!-- _class: section-title -->
+
+# Sectordoelen 2025
+## Nieuwe set (transparante PNG, uit PPTX)
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/01_identiteit.png)
+**01 — Identiteit**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/01_identiteit.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/02_onderwijsaanbod.png)
+**02 — Onderwijsaanbod**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/02_onderwijsaanbod.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/03_curriculuminformatie.png)
+**03 — Curriculuminformatie**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/03_curriculuminformatie.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/04_aanmelden_inschrijven_intekenen.png)
+**04 — Aanmelden Inschrijven Intekenen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/04_aanmelden_inschrijven_intekenen.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/05_resultaten_en_credentials.png)
+**05 — Resultaten En Credentials**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/05_resultaten_en_credentials.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/06_verrekenen.png)
+**06 — Verrekenen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/06_verrekenen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/07_digitale_geletterdheid_lerenden.png)
+**07 — Digitale Geletterdheid Lerenden**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/07_digitale_geletterdheid_lerenden.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/08_omgaan_met_ai_data.png)
+**08 — Omgaan Met Ai Data**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/08_omgaan_met_ai_data.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/09_generatieve_ai.png)
+**09 — Generatieve Ai**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/09_generatieve_ai.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/10_kleine_eenheden_onderwijs.png)
+**10 — Kleine Eenheden Onderwijs**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/10_kleine_eenheden_onderwijs.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/11_ondersteuning_onderwijsprofessionals.png)
+**11 — Ondersteuning Onderwijsprofessionals**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/11_ondersteuning_onderwijsprofessionals.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/12_ondersteuning_bij_ai.png)
+**12 — Ondersteuning Bij Ai**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/12_ondersteuning_bij_ai.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/13_studiedata.png)
+**13 — Studiedata**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/13_studiedata.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/14_digitaal_toetsen.png)
+**14 — Digitaal Toetsen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/14_digitaal_toetsen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/15_ctl.png)
+**15 — Ctl**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/15_ctl.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/16_communities.png)
+**16 — Communities**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/16_communities.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/17_onderzoeksprojecten.png)
+**17 — Onderzoeksprojecten**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/17_onderzoeksprojecten.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/18_collectieve_voorziening_leermaterialen.png)
+**18 — Collectieve Voorziening Leermaterialen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/18_collectieve_voorziening_leermaterialen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/19_samenwerking_leveranciers.png)
+**19 — Samenwerking Leveranciers**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/19_samenwerking_leveranciers.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/20_afsprakenstelsel_leermaterialen.png)
+**20 — Afsprakenstelsel Leermaterialen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/20_afsprakenstelsel_leermaterialen.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/21_gezamenlijk_transformeren.png)
+**21 — Gezamenlijk Transformeren**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/21_gezamenlijk_transformeren.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/22_verandervaardigheid.png)
+**22 — Verandervaardigheid**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/22_verandervaardigheid.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/23_wet_en_regelgeving.png)
+**23 — Wet En Regelgeving**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/23_wet_en_regelgeving.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/24_monitoring_transformatie.png)
+**24 — Monitoring Transformatie**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/24_monitoring_transformatie.png`
+</div>
+</div>
+
+---
+
+<div class="columns-4">
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/25_processen_en_beleid.png)
+**25 — Processen En Beleid**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/25_processen_en_beleid.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/26_digitale_sectorvoorzieningen.png)
+**26 — Digitale Sectorvoorzieningen**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/26_digitale_sectorvoorzieningen.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/27_kennisinfrastructuur.png)
+**27 — Kennisinfrastructuur**
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/sectordoelen-2025/27_kennisinfrastructuur.png`
 </div>
 </div>
 
@@ -442,89 +887,146 @@ Npuls Huisstijl 2025
 <!-- _class: section-title -->
 
 # Vormentaal
-## Geometrische shapes · 384 × 384 px
 
 ---
 
-# Vormentaal Assets 2 – 9
+# Vormentaal Assets 2–16
+## Gebruik als decoratief element in een hoek
+
 
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 2.png" class="illustration-sm" />
-<span class="small">Asset 2 · Zwart bg, oranje golven</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%202.png)
+**Asset 2**
+*Groene pijl diagonaal*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%202.png`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 3.png" class="illustration-sm" />
-<span class="small">Asset 3 · Geel bg, groene driehoek</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%203.png)
+**Asset 3**
+*Oranje golf rechtsonder*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%203.png`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 4.png" class="illustration-sm" />
-<span class="small">Asset 4 · Oranje bg, zwarte asterisk</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%204.png)
+**Asset 4**
+*Geel/blauw cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%204.png`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 5.png" class="illustration-sm" />
-<span class="small">Asset 5 · Blauw bg, ronde vormen</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%205.png)
+**Asset 5**
+*Roze/blauwe cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%205.png`
 </div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%206.png)
+**Asset 6**
+*Oranje/gele cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%206.png`
 </div>
-
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 6.png" class="illustration-sm" />
-<span class="small">Asset 6 · Zwart bg, groene chevrons</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%207.png)
+**Asset 7**
+*Groene/blauwe cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%207.png`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 7.png" class="illustration-sm" />
-<span class="small">Asset 7 · Geel bg, blauwe cirkel</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%208.png)
+**Asset 8**
+*Roze achtergrond oranje golven*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%208.png`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 8.png" class="illustration-sm" />
-<span class="small">Asset 8 · Roze bg, oranje golven</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%209.png)
+**Asset 9**
+*Blauwe cirkels patroon*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%209.png`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 9.png" class="illustration-sm" />
-<span class="small">Asset 9 · Geel bg, oranje boog</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2010.png)
+**Asset 10**
+*Oranje/blauwe cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2010.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2011.png)
+**Asset 11**
+*Geel achtergrond blauwe+oranje cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2011.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2012.png)
+**Asset 12**
+*Oranje achtergrond cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2012.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2013.png)
+**Asset 13**
+*Blauwe achtergrond cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2013.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2014.png)
+**Asset 14**
+*Groene achtergrond roze cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2014.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2015.png)
+**Asset 15**
+*Roze achtergrond blauwe cirkels*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2015.png`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2016.png)
+**Asset 16**
+*Oranje pijlen patroon*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2016.png`
 </div>
 </div>
 
 ---
 
-# Vormentaal Assets 10 – 16 & Losse elementen
+# Vormentaal — Losse SVG elementen
 
 <div class="columns-4">
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 10.png" class="illustration-sm" />
-<span class="small">Asset 10 · Roze bg, oranje curven</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/golforanje.svg)
+**golforanje**
+*Oranje golf lijn*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/golforanje.svg`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 11.png" class="illustration-sm" />
-<span class="small">Asset 11 · Geel bg, cirkels (blauw+oranje)</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/pijlengroen.svg)
+**pijlengroen**
+*Groene pijlen*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/pijlengroen.svg`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 12.png" class="illustration-sm" />
-<span class="small">Asset 12 · Lichtgroen bg, groene driehoek</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/pijlgroen.svg)
+**pijlgroen**
+*Enkele groene pijl*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/pijlgroen.svg`
 </div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 13.png" class="illustration-sm" />
-<span class="small">Asset 13 · Zwart bg, gele boog</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/pijlzwart.svg)
+**pijlzwart**
+*Zwarte pijl*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/pijlzwart.svg`
 </div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/Sterzwart.svg)
+**Sterzwart**
+*Zwarte ster*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/Sterzwart.svg`
 </div>
-
-<div class="columns-4" style="margin-top:12px">
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 14.png" class="illustration-sm" />
-<span class="small">Asset 14 · Groen bg, roze cirkels</span>
-</div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 15.png" class="illustration-sm" />
-<span class="small">Asset 15 · Blauw bg, blauwe golf</span>
-</div>
-<div class="icon-card">
-<img src="../assets/vormentaal/png/Asset 16.png" class="illustration-sm" />
-<span class="small">Asset 16 · Oranje bg, zwarte pijlen</span>
-</div>
-<div class="icon-card" style="background:#f5f5f5; padding:8px;">
-<img src="../assets/vormentaal/svg/Sterzwart.svg" class="illustration-sm" />
-<span class="small">Sterzwart · ster/asterisk</span>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/streepjesoranje.svg)
+**streepjesoranje**
+*Oranje streepjes*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/streepjesoranje.svg`
 </div>
 </div>
 
@@ -532,62 +1034,60 @@ Npuls Huisstijl 2025
 
 <!-- _class: section-title -->
 
-# Hoe gebruik je de assets?
+# Logo's
 
 ---
 
-# Assets als hoekdecoratie
+# Npuls Logo varianten
 
-Voeg een asset toe aan een slide met de klasse `asset-br`, `asset-bl`, `asset-tr` of `asset-tl`:
 
-```html
-<!-- _class: pink -->
-
-# Slide titel
-Bodytekst...
-
-<img src="../assets/vormentaal/png/Asset 8.png" class="asset-br" />
-```
-
-Kleiner formaat: voeg `sm` toe: `class="asset-br sm"`
-
-<div class="columns-4" style="margin-top:24px">
-<div><code>asset-br</code> — rechtsonder</div>
-<div><code>asset-bl</code> — linksonder</div>
-<div><code>asset-tr</code> — rechtsboven</div>
-<div><code>asset-tl</code> — linksboven</div>
-</div>
-
----
-
-# Illustraties in kolommen
-
-Gebruik `img.illustration`, `img.illustration-sm` of `img.illustration-lg` als maatsticker:
-
-```html
-<div class="columns-wide-left">
+<div class="columns-4">
 <div>
-
-Bodytekst links.
-
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_zwart.svg)
+**npuls_logo_zwart**
+*Logo zwart (voor lichte achtergronden)*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_zwart.svg`
 </div>
 <div>
-
-<img src="../assets/illustraties/png/Lamp.png" class="illustration" />
-
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_wit.svg)
+**npuls_logo_wit**
+*Logo wit (voor donkere achtergronden)*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_wit.svg`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_oranje_donker.svg)
+**npuls_logo_oranje_donker**
+*Logo oranje/donker (voor gekleurde achtergronden)*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_oranje_donker.svg`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_beeldmerk_oranje.svg)
+**npuls_beeldmerk_oranje**
+*Beeldmerk oranje*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_beeldmerk_oranje.svg`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_beeldmerk_zwart.svg)
+**npuls_beeldmerk_zwart**
+*Beeldmerk zwart*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_beeldmerk_zwart.svg`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_beeldmerk_roze.svg)
+**npuls_beeldmerk_roze**
+*Beeldmerk roze*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_beeldmerk_roze.svg`
+</div>
+<div>
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_partnerslide_logo.png)
+**npuls_partnerslide_logo**
+*Partnerslide logo (PNG)*
+`https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_partnerslide_logo.png`
 </div>
 </div>
-```
-
-| Klasse | Max hoogte |
-|---|---|
-| `illustration-sm` | 220 px |
-| `illustration` | 380 px |
-| `illustration-lg` | 520 px |
 
 ---
 
 <!-- _class: green lead center -->
 
-# Klaar om te presenteren.
-## Onderwijs bewegen.
+# Klaar voor gebruik.

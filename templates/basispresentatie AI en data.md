@@ -6,10 +6,10 @@ paginate: true
 ---
 <!-- _class: cover -->
 
-# Basispresentatie
-## Ondertitel of domein
+# Waarde(n)vol inzetten van AI en data
+## Verantwoorde AI in het vervolgonderwijs
 
-Naam Spreker · Rol · Maand Jaar
+Bram Enning · Programmamanager · mei 2026
 
 ---
 
@@ -41,27 +41,13 @@ Naam Spreker · Rol · Maand Jaar
 # Het verhaal uitgelegd
 
 ---
-
-<!--
-  TEKST + ILLUSTRATIE RECHTS
-  Standaard contentslide: titel linksboven, tekst links, illustratie rechts.
-  Pas de illustratie aan naar een passend bestand uit assets/illustraties/png/
-
--->
-
-# Communicatie voor Npuls fase 2
+# Waarom doen we wat we doen?
 
 <div class="columns-wide-left">
 <div>
 
-Een nieuwe programmaorganisatie vraagt om een **vernieuwde communicatieaanpak**.
-
-In deze presentatie nemen we je mee in het vernieuwde Npuls-verhaal, zodat jij goed kunt communiceren.
-
-- Punt één van het verhaal
-- Punt twee van het verhaal
-- Punt drie van het verhaal
-
+AI **transformeert** snel hoe we leren, lesgeven en organiseren. In het vervolgonderwijs ontbreekt het vaak aan **samenhang, eigenaarschap en duidelijke kaders**. De rol van **data** blijft vaak onderbelicht. Dit zet **publieke waarden** onder druk en vergroot de afhankelijkheid van commerciële partijen. Een sectorbrede aanpak is nodig.​
+Het is belangrijk om **kennis en vaardigheden** over AI én data duurzaam te ontwikkelen bij zowel **studenten (lerenden) als onderwijsprofessionals**. Op deze manier zorgen we ervoor dat AI en data bijdragen aan **toegankelijk, veilig en betrouwbaar onderwijs**.
 </div>
 <div>
 
@@ -73,7 +59,31 @@ In deze presentatie nemen we je mee in het vernieuwde Npuls-verhaal, zodat jij g
 </div>
 
 ---
+# Wat willen we bereiken?
 
+<div class="columns-wide-left">
+<div>
+
+In 2031 worden AI en data waarde(n)vol ingezet in het vervolgonderwijs.​
+
+
+* Lerenden en onderwijsprofessionals gebruiken AI en data verantwoord en veilig.​
+* De sector kan autonoom en waardengedreven het onderwijs vormgeven met AI en data.
+</div>
+<div>
+
+<div class="img-tile blue">
+  <img src="../assets/extracted/content/slide03_communicatie_illustratie.svg" class="illustration-sm" />
+</div>
+
+</div>
+</div>
+
+___
+# Aan welke sectordoelen werken we?
+
+
+---
 <!--
   STATEMENT / TAGLINE — groen, gecentreerd
   Groot statement dat het merk vertegenwoordigt.

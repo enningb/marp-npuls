@@ -81,6 +81,13 @@
 
 @import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap');
 
+@font-face {
+  font-family: 'Cooper Light BT';
+  src: url('../assets/fonts/Cooper Light BT.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* ── Brand tokens ─────────────────────────────────────────── */
 :root {
   --orange:        #DD784B;
