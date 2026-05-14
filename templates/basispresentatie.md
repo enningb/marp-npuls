@@ -82,7 +82,7 @@ In deze presentatie nemen we je mee in het vernieuwde Npuls-verhaal, zodat jij g
 </div>
 <div>
 
-<img src="../assets/illustraties/png/Presenteren.png" class="illustration" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Presenteren.png" class="illustration" />
 
 </div>
 </div>
@@ -117,7 +117,7 @@ hogescholen en universiteiten aan de transformatie van het onderwijs.
 **Samen** bouwen we aan een onderwijssector die blijvend bijdraagt aan een
 veerkrachtige samenleving, brede welvaart en een sterke economie.
 
-<img src="../assets/vormentaal/png/Asset 8.png" class="asset-br" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%208.png" class="asset-br" />
 
 ---
 
@@ -153,7 +153,7 @@ Het Ministerie van OCW is het uitvoerende ministerie.
 </div>
 </div>
 
-<img src="../assets/vormentaal/png/Asset 10.png" class="asset-bl sm" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2010.png" class="asset-bl sm" />
 
 ---
 
@@ -190,7 +190,7 @@ Het Ministerie van OCW is het uitvoerende ministerie.
 </div>
 <div>
 
-<img src="../assets/illustraties/png/Connecties.png" class="illustration" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Connecties.png" class="illustration" />
 
 </div>
 </div>
@@ -261,7 +261,7 @@ De inhoud van het onderwijs actueel houdt en afstemt op nieuwe behoeften.
 
 <div class="image-panel">
 
-![](../assets/illustraties/png/Kennisdeling.png)
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Kennisdeling.png)
 
 </div>
 
@@ -282,7 +282,7 @@ We werken aan gezamenlijke ambities en beschermen de **publieke waarden** om con
 <div class="columns-3">
 <div>
 
-<img src="../assets/illustraties/png/AI.png" class="illustration-sm" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/AI.png" class="illustration-sm" />
 
 ### AI en data waarde(n)vol inzetten
 De lerende gebruikt AI goed en veilig.
@@ -290,7 +290,7 @@ De lerende gebruikt AI goed en veilig.
 </div>
 <div>
 
-<img src="../assets/illustraties/png/Lerende.png" class="illustration-sm" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Lerende.png" class="illustration-sm" />
 
 ### Leren zonder drempels
 De lerende heeft regie op de eigen leer- en ontwikkelroute.
@@ -298,7 +298,7 @@ De lerende heeft regie op de eigen leer- en ontwikkelroute.
 </div>
 <div>
 
-<img src="../assets/illustraties/png/Boeken.png" class="illustration-sm" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Boeken.png" class="illustration-sm" />
 
 ### Doorlopend het beste onderwijs
 De lerende krijgt doorlopend actueel en kwalitatief goed onderwijs.
@@ -328,7 +328,7 @@ De rol van data blijft onderbelicht. Dit zet **publieke waarden** onder druk en 
 </div>
 <div>
 
-<img src="../assets/illustraties/png/AI en brein.png" class="illustration" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/AI%20en%20brein.png" class="illustration" />
 
 </div>
 </div>
@@ -355,7 +355,7 @@ De rol van data blijft onderbelicht. Dit zet **publieke waarden** onder druk en 
 </div>
 <div>
 
-<img src="../assets/vormentaal/png/Asset 16.png" class="illustration" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2016.png" class="illustration" />
 
 </div>
 </div>
@@ -387,28 +387,28 @@ De rol van data blijft onderbelicht. Dit zet **publieke waarden** onder druk en 
 <div class="columns-4">
 <div class="topic-card">
 
-<img src="../assets/sectordoelen/07 - Digitale geletterdheid lerenden.jpg" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/07%20-%20Digitale%20geletterdheid%20lerenden.jpg" />
 
 **AI en data-geletterdheid**
 
 </div>
 <div class="topic-card">
 
-<img src="../assets/sectordoelen/08 - Omgaan met AI, data en educatieve technologieen.jpg" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/08%20-%20Omgaan%20met%20AI%2C%20data%20en%20educatieve%20technologieen.jpg" />
 
 **Verantwoord gebruik AI en data**
 
 </div>
 <div class="topic-card">
 
-<img src="../assets/sectordoelen/13 - (Studie)data.jpg" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/13%20-%20%28Studie)data.jpg" />
 
 **Inzicht en strategie**
 
 </div>
 <div class="topic-card">
 
-<img src="../assets/sectordoelen/09 - Generatieve AI.jpg" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/09%20-%20Generatieve%20AI.jpg" />
 
 **Voorzieningen AI en data**
 
@@ -481,7 +481,7 @@ Verbinden van mensen en kennis.
 
 We bouwen aan een toekomstbestendige onderwijssector die bijdraagt aan een veerkrachtige samenleving.
 
-<img src="../assets/vormentaal/png/Asset 11.png" class="asset-br" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2011.png" class="asset-br" />
 
 ---
 
@@ -501,12 +501,12 @@ Met de MBO Raad, Vereniging Hogescholen, Universiteiten van Nederland, SURF en v
 </div>
 <div>
 
-<img src="../assets/illustraties/png/Handen.png" class="illustration" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Handen.png" class="illustration" />
 
 </div>
 </div>
 
-<img src="../assets/vormentaal/png/Asset 14.png" class="asset-br sm" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%2014.png" class="asset-br sm" />
 
 ---
 
@@ -531,4 +531,4 @@ Met de MBO Raad, Vereniging Hogescholen, Universiteiten van Nederland, SURF en v
 
 # Onderwijs bewegen.
 
-<img src="../assets/vormentaal/png/Asset 8.png" class="asset-br" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%208.png" class="asset-br" />
