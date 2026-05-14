@@ -1,0 +1,980 @@
+/* @theme npuls-dark */
+
+/* ============================================================
+   Npuls Huisstijl – MARP Dark Theme  (Brand Guide 2025 v1.4)
+
+   Same brand tokens and layout helpers as npuls.css, but
+   defaults to a black background so every slide is dark.
+   Use this as the standalone "dark mode" presentation theme.
+
+   Slide classes (use with <!-- _class: classname -->):
+     cover       Orange bg, white text — title slide
+     blue        Brand blue bg, white text
+     green       Brand green bg, white text
+     yellow      Brand yellow bg, black text
+     section-title  Orange left bar divider
+     quote       Centered large quote
+     light       White bg, black text — for contrast slides
+   ============================================================ */
+
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap');
+
+/* ── Brand tokens ─────────────────────────────────────────── */
+:root {
+  --orange:        #DD784B;
+  --blue:          #3D68EC;
+  --black:         #000000;
+  --pink:          #F4D9DC;
+  --yellow:        #F4D74B;
+  --green:         #00AF81;
+  --light-green:   #CCEEE6;
+  --light-blue:    #D6E2FD;
+  --light-pink:    #FAEAEA;
+  --light-orange:  #FFE4D8;
+  --light-yellow:  #FCF5D4;
+  --white:         #FFFFFF;
+  --font-sans:     'General Sans', Arial, Helvetica, sans-serif;
+  --font-serif:    'Cooper Light BT', 'Cooper Light', Georgia, serif;
+}
+
+/* ── Base slide — dark by default ────────────────────────── */
+section {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.55;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 56px 80px 64px;
+  width: 1280px;
+  height: 720px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Thin orange top bar */
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--orange);
+  z-index: 1;
+}
+
+/* ── Headings ─────────────────────────────────────────────── */
+h1 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: var(--orange);
+}
+
+h2 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  color: var(--yellow);
+}
+
+h3 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.3;
+  margin: 0 0 8px;
+  color: var(--light-blue);
+}
+
+h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 0 8px;
+  color: var(--white);
+}
+
+/* ── Body text ────────────────────────────────────────────── */
+p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+p:last-child { margin-bottom: 0; }
+
+/* ── Lists ────────────────────────────────────────────────── */
+ul, ol {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  padding-left: 32px;
+}
+
+li { margin-bottom: 6px; }
+li:last-child { margin-bottom: 0; }
+
+ul > li::marker { color: var(--orange); }
+ol > li::marker { color: var(--orange); font-weight: 600; }
+
+/* ── Inline emphasis ──────────────────────────────────────── */
+strong {
+  font-weight: 600;
+  color: var(--orange);
+}
+
+em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--light-blue);
+}
+
+/* ── Blockquote ───────────────────────────────────────────── */
+blockquote {
+  font-family: var(--font-serif);
+  font-size: 34px;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--light-blue);
+  border-left: 5px solid var(--orange);
+  margin: 0;
+  padding: 8px 28px;
+  line-height: 1.4;
+}
+
+blockquote > p {
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* ── Horizontal rule ──────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 3px solid var(--orange);
+  margin: 20px 0;
+}
+
+/* ── Code ─────────────────────────────────────────────────── */
+code {
+  font-size: 0.85em;
+  background: #1a1a1a;
+  color: var(--light-orange);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+pre {
+  background: #111;
+  color: var(--white);
+  padding: 24px 28px;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 1.5;
+  overflow: auto;
+  margin: 0 0 16px;
+  border: 1px solid #222;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+/* ── Tables ───────────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+th {
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+  padding: 10px 16px;
+  text-align: left;
+}
+
+td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #222;
+}
+
+tr:nth-child(even) td { background: #111; }
+
+/* ── Links ────────────────────────────────────────────────── */
+a {
+  color: var(--light-blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+/* ── Images ───────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Page number ──────────────────────────────────────────── */
+section::after {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+/* ── Header / Footer ──────────────────────────────────────── */
+header {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+footer {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: #555;
+}
+
+/* ============================================================
+   COLOR VARIANTS
+   ============================================================ */
+
+/* ── LEAD — vertically centered ──────────────────────────── */
+section.lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.lead h1 { font-size: 60px; }
+
+/* ── COVER — orange bg, white text ───────────────────────── */
+section.cover {
+  background-color: var(--orange);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 72px;
+}
+
+section.cover::before { background: rgba(255, 255, 255, 0.3); }
+
+section.cover h1 {
+  color: var(--white);
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+section.cover h2 {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 28px;
+  opacity: 0.85;
+}
+
+section.cover h3  { color: rgba(255, 255, 255, 0.7); }
+section.cover p   { color: rgba(255, 255, 255, 0.85); font-size: 22px; }
+section.cover strong { color: var(--yellow); }
+section.cover a { color: var(--white); border-color: rgba(255, 255, 255, 0.5); }
+
+section.cover ul > li::marker,
+section.cover ol > li::marker { color: var(--yellow); }
+
+section.cover section::after { color: rgba(255, 255, 255, 0.5); }
+section.cover footer { color: rgba(255, 255, 255, 0.55); }
+
+/* ── LIGHT — white bg, black text (contrast slides) ─────── */
+section.light {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+section.light::before { background: var(--orange); }
+
+section.light h1 { color: var(--black); }
+section.light h2 { color: var(--orange); }
+section.light h3 { color: var(--blue); }
+
+section.light strong { color: var(--orange); }
+section.light em { color: inherit; }
+section.light blockquote { color: var(--blue); }
+section.light code { background: var(--light-orange); color: var(--black); }
+
+section.light ul > li::marker,
+section.light ol > li::marker { color: var(--orange); }
+
+section.light section::after { color: var(--orange); }
+section.light a { color: var(--blue); border-color: var(--blue); }
+section.light footer { color: #999; }
+
+section.light td { border-bottom-color: var(--light-orange); }
+section.light tr:nth-child(even) td { background: var(--light-orange); }
+
+/* ── BLUE — brand blue bg, white text ────────────────────── */
+section.blue {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+section.blue::before { background: var(--yellow); }
+
+section.blue h1 { color: var(--white); }
+section.blue h2 { color: var(--yellow); }
+section.blue h3 { color: rgba(255, 255, 255, 0.75); }
+
+section.blue strong { color: var(--yellow); }
+section.blue blockquote { color: var(--white); border-color: var(--yellow); }
+section.blue code { background: rgba(255, 255, 255, 0.12); color: var(--white); }
+
+section.blue ul > li::marker,
+section.blue ol > li::marker { color: var(--yellow); }
+
+section.blue section::after { color: rgba(255, 255, 255, 0.6); }
+section.blue a { color: var(--yellow); border-color: var(--yellow); }
+
+/* ── GREEN — brand green bg, white text ──────────────────── */
+section.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+section.green::before { background: var(--black); }
+
+section.green h1 { color: var(--white); }
+section.green h2 { color: rgba(255, 255, 255, 0.85); }
+section.green h3 { color: rgba(255, 255, 255, 0.7); }
+
+section.green strong { color: var(--yellow); }
+
+section.green ul > li::marker,
+section.green ol > li::marker { color: var(--yellow); }
+
+section.green section::after { color: rgba(255, 255, 255, 0.6); }
+
+/* ── YELLOW — yellow bg, black text ──────────────────────── */
+section.yellow {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+section.yellow::before { background: var(--black); }
+
+section.yellow h1 { color: var(--black); }
+section.yellow h2 { color: rgba(0, 0, 0, 0.6); }
+section.yellow h3 { color: var(--blue); }
+
+section.yellow strong { color: var(--blue); }
+
+section.yellow ul > li::marker,
+section.yellow ol > li::marker { color: var(--black); }
+
+section.yellow section::after { color: rgba(0, 0, 0, 0.45); }
+section.yellow a { color: var(--blue); border-color: var(--blue); }
+
+/* ── SECTION-TITLE — chapter divider ─────────────────────── */
+section.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding-left: 104px;
+}
+
+section.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  height: 100%;
+  background: var(--orange);
+}
+
+section.section-title h1 {
+  color: var(--white);
+  font-size: 72px;
+  line-height: 1.1;
+}
+
+section.section-title h2 {
+  color: var(--orange);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+section.section-title h3 { color: rgba(255, 255, 255, 0.5); }
+section.section-title section::after { color: var(--orange); }
+
+/* ── QUOTE — centered large quote ────────────────────────── */
+section.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0d0d0d;
+  padding: 80px 120px;
+}
+
+section.quote::before { display: none; }
+
+section.quote blockquote {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--white);
+  border-left: none;
+  padding: 0;
+  max-width: 84%;
+  line-height: 1.35;
+}
+
+section.quote blockquote::before {
+  content: '"';
+  font-size: 100px;
+  color: var(--orange);
+  font-family: var(--font-serif);
+  line-height: 0.6;
+  display: block;
+  margin-bottom: 20px;
+}
+
+section.quote blockquote > p {
+  font-size: inherit;
+  margin: 0;
+}
+
+section.quote section::after { color: var(--orange); }
+
+/* ============================================================
+   LAYOUT HELPERS — same as npuls.css
+   ============================================================ */
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.columns-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.columns-wide-left {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.columns-wide-right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.highlight {
+  background: rgba(221, 120, 75, 0.15);
+  border-left: 5px solid var(--orange);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-blue {
+  background: rgba(61, 104, 236, 0.2);
+  border-left: 5px solid var(--blue);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-green {
+  background: rgba(0, 175, 129, 0.15);
+  border-left: 5px solid var(--green);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-yellow {
+  background: rgba(244, 215, 75, 0.15);
+  border-left: 5px solid var(--yellow);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 3px 14px;
+  border-radius: 99px;
+  line-height: 1.6;
+}
+
+.tag-blue   { background: var(--blue); }
+.tag-green  { background: var(--green); }
+.tag-black  { background: #222; }
+.tag-yellow { background: var(--yellow); color: var(--black); }
+
+.center { text-align: center; }
+.right  { text-align: right; }
+.small  { font-size: 18px; line-height: 1.5; }
+.large  { font-size: 32px; }
+.muted  { color: #555; }
+.caps   { text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+
+/* ============================================================
+   ICONS — FontAwesome 6 Solid (free)
+   Npuls brand specifies FA Sharp Solid (FA6 Pro).
+   FA6 free "solid" is the closest available alternative.
+   Replace the @import with your FA Pro kit URL for sharp icons.
+   ============================================================ */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+.fa-solid,
+.fa-regular,
+.fa-brands { color: inherit; }
+
+.icon-orange,
+.icon-orange .fa-solid { color: var(--orange); }
+
+.icon-blue,
+.icon-blue .fa-solid   { color: var(--light-blue); }
+
+.icon-green,
+.icon-green .fa-solid  { color: var(--green); }
+
+.icon-yellow,
+.icon-yellow .fa-solid { color: var(--yellow); }
+
+.icon-white,
+.icon-white .fa-solid  { color: var(--white); }
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.icon-card .fa-solid {
+  font-size: 52px;
+  color: var(--orange);
+}
+
+.icon-card strong {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.icon-card p,
+.icon-card span {
+  font-size: 19px;
+  line-height: 1.45;
+  margin: 0;
+  color: inherit;
+}
+
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.icon-row .fa-solid {
+  font-size: 26px;
+  width: 34px;
+  text-align: center;
+  flex-shrink: 0;
+  color: var(--orange);
+}
+
+/* ============================================================
+   VORMENTAAL — Geometric Shape Language (dark theme)
+   Higher opacities than light theme for visibility on black.
+   ============================================================ */
+
+section.vormentaal::after {
+  content: '';
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  background: var(--orange);
+  right: -150px;
+  bottom: -150px;
+  opacity: 0.22;
+  z-index: 0;
+  pointer-events: none;
+}
+
+section.vormentaal > * { position: relative; z-index: 1; }
+
+section.vormentaal.yellow-circle::after { background: var(--yellow); opacity: 0.35; }
+section.vormentaal.blue-circle::after   { background: var(--blue);   opacity: 0.3; }
+section.vormentaal.green-circle::after  { background: var(--green);  opacity: 0.3; }
+section.vormentaal.pink-circle::after   { background: var(--pink);   opacity: 0.25; }
+
+section.vormentaal.circle-left::after {
+  right: auto; bottom: auto;
+  left: -150px; top: -150px;
+}
+
+section.vormentaal-split::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 0;
+  width: 44%;
+  height: 100%;
+  background: var(--orange);
+  clip-path: polygon(22% 0%, 100% 0%, 100% 100%, 0% 100%);
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+}
+
+section.vormentaal-split > * { position: relative; z-index: 1; }
+
+section.vormentaal-split.split-orange::after { background: var(--orange); opacity: 0.25; }
+section.vormentaal-split.split-blue::after   { background: var(--blue);   opacity: 0.4; }
+section.vormentaal-split.split-green::after  { background: var(--green);  opacity: 0.3; }
+section.vormentaal-split.split-yellow::after { background: var(--yellow); opacity: 0.25; }
+
+section.vormentaal-statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--black);
+}
+
+section.vormentaal-statement h1 {
+  font-size: 60px;
+  line-height: 1.15;
+  color: var(--white);
+  background: var(--orange);
+  display: inline;
+  padding: 6px 20px 10px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  max-width: fit-content;
+}
+
+section.vormentaal-statement h2 {
+  font-size: 28px;
+  color: var(--orange);
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+section.vormentaal-statement.statement-blue   h1 { background: var(--blue); }
+section.vormentaal-statement.statement-green  h1 { background: var(--green); }
+section.vormentaal-statement.statement-yellow h1 { background: var(--yellow); color: var(--black); }
+
+section.vormentaal-circles::after {
+  content: '';
+  position: absolute;
+  right: 64px; top: 48px;
+  width: 180px; height: 180px;
+  background:
+    radial-gradient(circle 32px at 32px  32px,  var(--orange) 100%, transparent 100%),
+    radial-gradient(circle 20px at 100px 24px,  var(--blue)   100%, transparent 100%),
+    radial-gradient(circle 24px at 60px  110px, var(--yellow) 100%, transparent 100%),
+    radial-gradient(circle 16px at 140px 120px, var(--green)  100%, transparent 100%);
+  opacity: 0.75;
+  z-index: 0;
+  pointer-events: none;
+}
+
+section.vormentaal-circles > * { position: relative; z-index: 1; }
+
+section.vormentaal-frame::after {
+  content: '';
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 80px; height: 80px;
+  border-top: 8px solid var(--orange);
+  border-right: 8px solid var(--orange);
+  z-index: 0;
+  pointer-events: none;
+}
+
+section.vormentaal-frame > * { position: relative; z-index: 1; }
+
+/* ============================================================
+   INLINE SHAPE HELPERS
+   ============================================================ */
+
+.shape-bar {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.3;
+  padding: 10px 24px;
+  margin-bottom: 10px;
+}
+
+.shape-bar.blue   { background: var(--blue); }
+.shape-bar.green  { background: var(--green); }
+.shape-bar.yellow { background: var(--yellow); color: var(--black); }
+.shape-bar.black  { background: #111; border: 1px solid #333; }
+.shape-bar.pink   { background: var(--pink); color: var(--black); }
+
+.shape-bar.skew { transform: skewX(-4deg); display: inline-block; }
+.shape-bar.skew > * { display: inline-block; transform: skewX(4deg); }
+
+.dot {
+  display: inline-block;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--orange);
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.dot.blue   { background: var(--blue); }
+.dot.green  { background: var(--green); }
+.dot.yellow { background: var(--yellow); }
+.dot.white  { background: var(--white); }
+
+.dot.large  { width: 24px; height: 24px; }
+.dot.xlarge { width: 40px; height: 40px; }
+
+.dot-rule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.dot-rule::before {
+  content: '';
+  display: block;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+}
+
+.dot-rule::after {
+  content: '';
+  display: block;
+  flex: 1;
+  height: 2px;
+  background: var(--orange);
+  opacity: 0.25;
+}
+
+/* ============================================================
+   ADDITIONAL COLOR VARIANTS (dark theme versions)
+   ============================================================ */
+
+section.orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+section.orange::before { background: rgba(255, 255, 255, 0.3); }
+section.orange h1 { color: var(--white); }
+section.orange h2 { color: var(--yellow); }
+section.orange h3 { color: rgba(255, 255, 255, 0.75); }
+section.orange strong { color: var(--yellow); }
+section.orange blockquote { color: var(--white); border-color: var(--yellow); }
+section.orange ul > li::marker,
+section.orange ol > li::marker { color: var(--yellow); }
+section.orange section::after { color: rgba(255, 255, 255, 0.6); }
+section.orange a { color: var(--yellow); border-color: var(--yellow); }
+
+section.pink {
+  background-color: var(--pink);
+  color: var(--black);
+}
+
+section.pink::before { background: var(--orange); }
+section.pink h1 { color: var(--black); }
+section.pink h2 { color: var(--orange); }
+section.pink h3 { color: var(--blue); }
+section.pink strong { color: var(--orange); }
+section.pink ul > li::marker,
+section.pink ol > li::marker { color: var(--orange); }
+section.pink section::after { color: var(--orange); }
+
+/* ── Split image layouts ─────────────────────────────────── */
+
+section.split-image { padding-left: 52%; }
+
+section.split-image .image-panel {
+  position: absolute;
+  left: 0; top: 0;
+  width: 48%; height: 100%;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+section.split-image .image-panel img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  max-width: none !important; max-height: none !important;
+}
+
+section.split-image-right { padding-right: 52%; }
+
+section.split-image-right .image-panel {
+  position: absolute;
+  right: 0; top: 0;
+  width: 48%; height: 100%;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+section.split-image-right .image-panel img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  max-width: none !important; max-height: none !important;
+}
+
+/* ── Asset positioning ───────────────────────────────────── */
+
+img.asset-br { position: absolute !important; right: 0 !important; bottom: 0 !important; width: 300px !important; height: 300px !important; max-width: 300px !important; max-height: 300px !important; z-index: 0; }
+img.asset-bl { position: absolute !important; left: 0 !important; bottom: 0 !important; width: 300px !important; height: 300px !important; max-width: 300px !important; max-height: 300px !important; z-index: 0; }
+img.asset-tr { position: absolute !important; right: 0 !important; top: 0 !important; width: 260px !important; height: 260px !important; max-width: 260px !important; max-height: 260px !important; z-index: 0; }
+img.asset-tl { position: absolute !important; left: 0 !important; top: 0 !important; width: 260px !important; height: 260px !important; max-width: 260px !important; max-height: 260px !important; z-index: 0; }
+img.asset-center-r { position: absolute !important; right: 0 !important; top: 50% !important; transform: translateY(-50%) !important; width: 320px !important; height: 320px !important; max-width: 320px !important; max-height: 320px !important; z-index: 0; }
+
+section:has(img.asset-br) > *:not(img.asset-br),
+section:has(img.asset-bl) > *:not(img.asset-bl),
+section:has(img.asset-tr) > *:not(img.asset-tr),
+section:has(img.asset-tl) > *:not(img.asset-tl),
+section:has(img.asset-center-r) > *:not(img.asset-center-r) { position: relative; z-index: 1; }
+
+/* ── Illustration sizing ─────────────────────────────────── */
+
+img.illustration    { display: block !important; max-height: 380px !important; width: auto !important; max-width: 100% !important; height: auto !important; margin: 0 auto; }
+img.illustration-sm { display: block !important; max-height: 220px !important; width: auto !important; max-width: 100% !important; height: auto !important; margin: 0 auto; }
+img.illustration-lg { display: block !important; max-height: 520px !important; width: auto !important; max-width: 100% !important; height: auto !important; margin: 0 auto; }
+
+/* ── Columns-4 ───────────────────────────────────────────── */
+
+.columns-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ── Step numbers ────────────────────────────────────────── */
+
+.step-number {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 8px;
+}
+
+/* ── Stats ───────────────────────────────────────────────── */
+
+.stat {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 1;
+  color: var(--orange);
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  color: inherit;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+section.orange .stat { color: var(--yellow); }
+section.green  .stat { color: var(--white); }
+section.pink   .stat { color: var(--orange); }
+section.blue   .stat { color: var(--yellow); }
+
+/* ── Agenda list ─────────────────────────────────────────── */
+
+ol.agenda { list-style: none; padding: 0; margin: 0; counter-reset: agenda-counter; }
+
+ol.agenda li {
+  counter-increment: agenda-counter;
+  display: flex; align-items: baseline; gap: 20px;
+  font-size: 26px; font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+}
+
+ol.agenda li::before {
+  content: counter(agenda-counter, decimal-leading-zero);
+  font-family: var(--font-sans);
+  font-weight: 600; font-size: 18px;
+  color: var(--orange);
+  flex-shrink: 0; width: 36px;
+}
+
+/* ── Topic card ──────────────────────────────────────────── */
+
+.topic-card {
+  display: flex; flex-direction: column; gap: 10px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+  border-top: 4px solid var(--orange);
+}
+
+.topic-card img { max-height: 100px !important; width: auto !important; max-width: 100% !important; display: block; }
+.topic-card strong { font-size: 20px; display: block; color: var(--white); }
+.topic-card p { font-size: 17px; margin: 0; color: rgba(255,255,255,0.7); }
+
+section.orange .topic-card { background: rgba(255, 255, 255, 0.15); }

@@ -1,0 +1,1345 @@
+/* @theme npuls */
+
+/* ============================================================
+   Npuls Huisstijl – MARP Theme  (Brand Guide 2025 v1.4)
+
+   Required font (free):
+     General Sans — https://www.fontshare.com/fonts/general-sans
+     Download & install locally, or the @import below loads it
+     from Fontshare's CDN when internet is available.
+
+   Optional secondary font (commercial):
+     Cooper Light BT — used for quotes and intro text.
+     Falls back to Georgia if not installed.
+
+   Slide classes (use with <!-- _class: classname -->):
+     cover          Orange bg, white text — title slide
+     dark           Black bg, white text
+     blue           Brand blue bg, white text
+     green          Brand green bg, white text
+     yellow         Brand yellow bg, black text
+     section-title  Black bg with orange left bar — chapter divider
+     light-blue     Pale blue bg, black text
+     light-green    Pale green bg, black text
+     light-orange   Pale orange bg, black text
+     quote          Centered large quote, light-blue bg
+     lead           Vertically centered content
+
+   Vormentaal slide classes:
+     vormentaal              Large circle decoration, bottom-right
+     vormentaal circle-left  Same circle, top-left corner
+     vormentaal yellow-circle / blue-circle / green-circle
+     vormentaal-split        Diagonal color band on the right
+     vormentaal-split split-orange / split-blue / split-green
+     vormentaal-statement    Full-bleed statement / one-liner slide
+
+   Inline shape helpers (use as HTML inside markdown):
+     <div class="shape-bar">text</div>         Colored rectangle backing
+     <div class="shape-bar blue">text</div>    Blue variant
+     <div class="shape-bar yellow">text</div>  Yellow variant
+     <div class="shape-bar green">text</div>   Green variant
+     <span class="dot orange"></span>           Decorative filled circle
+     <span class="dot blue"></span>
+
+   Icon helpers (FontAwesome 6 Solid):
+     Note: Npuls brand uses FA Sharp Solid (FA6 Pro).
+     This theme loads FA6 free "solid" as the nearest free
+     equivalent. Use a FA Pro kit to get the sharp style.
+     Usage: <i class="fa-solid fa-star"></i>
+
+     .icon-orange / .icon-blue / .icon-green / .icon-yellow
+       — apply to a parent element to tint child icons
+     .icon-card    — vertical icon + label block (use in .columns)
+     .icon-row     — inline icon + label list item
+
+   Layout helpers (use inside markdown as HTML divs):
+     <div class="columns">…</div>      — 50/50 columns
+     <div class="columns-3">…</div>    — three equal columns
+     <div class="columns-wide-left">…</div>  — 2/3 + 1/3
+     <div class="columns-wide-right">…</div> — 1/3 + 2/3
+     <div class="highlight">…</div>    — orange accent box
+     <div class="highlight-blue">…</div>
+     <div class="highlight-green">…</div>
+     <span class="tag">…</span>        — pill label (orange)
+     <span class="tag tag-blue">…</span>
+     <span class="tag tag-green">…</span>
+     <span class="tag tag-yellow">…</span>
+   ============================================================ */
+
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap');
+
+/* ── Brand tokens ─────────────────────────────────────────── */
+:root {
+  --orange:        #DD784B;
+  --blue:          #3D68EC;
+  --black:         #000000;
+  --pink:          #F4D9DC;
+  --yellow:        #F4D74B;
+  --green:         #00AF81;
+  --light-green:   #CCEEE6;
+  --light-blue:    #D6E2FD;
+  --light-pink:    #FAEAEA;
+  --light-orange:  #FFE4D8;
+  --light-yellow:  #FCF5D4;
+  --white:         #FFFFFF;
+  --font-sans:     'General Sans', Arial, Helvetica, sans-serif;
+  --font-serif:    'Cooper Light BT', 'Cooper Light', Georgia, serif;
+}
+
+/* ── Base slide ───────────────────────────────────────────── */
+section {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.55;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 56px 80px 64px;
+  width: 1280px;
+  height: 720px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Thin orange top bar on every slide */
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--orange);
+  z-index: 1;
+}
+
+/* ── Headings ─────────────────────────────────────────────── */
+h1 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  color: var(--black);
+}
+
+h2 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  color: var(--orange);
+}
+
+h3 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.3;
+  margin: 0 0 8px;
+  color: var(--blue);
+}
+
+h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 0 8px;
+  color: var(--black);
+}
+
+/* ── Body text ────────────────────────────────────────────── */
+p {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+p:last-child { margin-bottom: 0; }
+
+/* ── Lists ────────────────────────────────────────────────── */
+ul, ol {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  padding-left: 32px;
+}
+
+li { margin-bottom: 6px; }
+li:last-child { margin-bottom: 0; }
+
+ul > li::marker { color: var(--orange); }
+ol > li::marker { color: var(--orange); font-weight: 600; }
+
+/* ── Inline emphasis ──────────────────────────────────────── */
+strong {
+  font-weight: 600;
+  color: var(--orange);
+}
+
+em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ── Blockquote — rendered in Cooper Light ────────────────── */
+blockquote {
+  font-family: var(--font-serif);
+  font-size: 34px;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--blue);
+  border-left: 5px solid var(--orange);
+  margin: 0;
+  padding: 8px 28px;
+  line-height: 1.4;
+}
+
+blockquote > p {
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* ── Horizontal rule ──────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 3px solid var(--orange);
+  margin: 20px 0;
+}
+
+/* ── Code ─────────────────────────────────────────────────── */
+code {
+  font-size: 0.85em;
+  background: var(--light-orange);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+pre {
+  background: var(--black);
+  color: var(--white);
+  padding: 24px 28px;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 1.5;
+  overflow: auto;
+  margin: 0 0 16px;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+/* ── Tables ───────────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+th {
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+  padding: 10px 16px;
+  text-align: left;
+}
+
+td {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--light-orange);
+}
+
+tr:nth-child(even) td {
+  background: var(--light-orange);
+}
+
+/* ── Links ────────────────────────────────────────────────── */
+a {
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue);
+}
+
+/* ── Images ───────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Page number ──────────────────────────────────────────── */
+section::after {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+/* ── Header / Footer ──────────────────────────────────────── */
+header {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+footer {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: #999;
+}
+
+/* ============================================================
+   COLOR VARIANTS
+   Apply with <!-- _class: variant --> on any slide
+   ============================================================ */
+
+/* ── LEAD — vertically centered content ───────────────────── */
+section.lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.lead h1 { font-size: 60px; }
+section.lead p  { font-size: 26px; }
+
+/* ── COVER — orange bg, white text (title slide) ──────────── */
+section.cover {
+  background-color: var(--orange);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 72px;
+}
+
+section.cover::before { background: rgba(255, 255, 255, 0.3); }
+
+section.cover h1 {
+  color: var(--white);
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+section.cover h2 {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 28px;
+  opacity: 0.85;
+}
+
+section.cover h3  { color: rgba(255, 255, 255, 0.7); }
+section.cover p   { color: rgba(255, 255, 255, 0.85); font-size: 22px; }
+
+section.cover strong { color: var(--yellow); }
+
+section.cover a {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+section.cover ul > li::marker,
+section.cover ol > li::marker { color: var(--yellow); }
+
+section.cover section::after { color: rgba(255, 255, 255, 0.5); }
+
+section.cover footer { color: rgba(255, 255, 255, 0.55); }
+
+/* ── DARK — black bg, white text ─────────────────────────── */
+section.dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+section.dark::before { background: var(--orange); }
+
+section.dark h1 { color: var(--orange); }
+section.dark h2 { color: var(--yellow); }
+section.dark h3 { color: var(--light-blue); }
+
+section.dark strong   { color: var(--orange); }
+section.dark em       { color: var(--light-blue); }
+section.dark blockquote { color: var(--light-blue); }
+
+section.dark code { background: #1a1a1a; color: var(--white); }
+
+section.dark ul > li::marker,
+section.dark ol > li::marker { color: var(--orange); }
+
+section.dark section::after { color: var(--orange); }
+
+section.dark a { color: var(--light-blue); border-color: var(--light-blue); }
+section.dark footer { color: #666; }
+
+section.dark td { border-bottom-color: #333; }
+section.dark tr:nth-child(even) td { background: #111; }
+
+/* ── BLUE — brand blue bg, white text ────────────────────── */
+section.blue {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+section.blue::before { background: var(--yellow); }
+
+section.blue h1 { color: var(--white); }
+section.blue h2 { color: var(--yellow); }
+section.blue h3 { color: rgba(255, 255, 255, 0.75); }
+
+section.blue strong   { color: var(--yellow); }
+section.blue blockquote { color: var(--white); border-color: var(--yellow); }
+section.blue code { background: rgba(255, 255, 255, 0.15); color: var(--white); }
+
+section.blue ul > li::marker,
+section.blue ol > li::marker { color: var(--yellow); }
+
+section.blue section::after { color: rgba(255, 255, 255, 0.6); }
+section.blue a { color: var(--yellow); border-color: var(--yellow); }
+
+/* ── GREEN — brand green bg, white text ──────────────────── */
+section.green {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+section.green::before { background: var(--black); }
+
+section.green h1 { color: var(--white); }
+section.green h2 { color: rgba(255, 255, 255, 0.85); }
+section.green h3 { color: rgba(255, 255, 255, 0.7); }
+
+section.green strong { color: var(--yellow); }
+
+section.green ul > li::marker,
+section.green ol > li::marker { color: var(--yellow); }
+
+section.green section::after { color: rgba(255, 255, 255, 0.6); }
+
+/* ── YELLOW — yellow bg, black text ──────────────────────── */
+section.yellow {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+section.yellow::before { background: var(--black); }
+
+section.yellow h1 { color: var(--black); }
+section.yellow h2 { color: var(--black); opacity: 0.65; }
+section.yellow h3 { color: var(--blue); }
+
+section.yellow strong { color: var(--blue); }
+
+section.yellow ul > li::marker,
+section.yellow ol > li::marker { color: var(--black); }
+
+section.yellow section::after { color: rgba(0, 0, 0, 0.45); }
+
+/* ── SECTION-TITLE — chapter divider, black bg + left bar ── */
+section.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding-left: 104px;
+}
+
+section.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  height: 100%;
+  background: var(--orange);
+}
+
+section.section-title h1 {
+  color: var(--white);
+  font-size: 72px;
+  line-height: 1.1;
+}
+
+section.section-title h2 {
+  color: var(--orange);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+section.section-title h3 { color: rgba(255, 255, 255, 0.55); font-weight: 400; }
+section.section-title section::after { color: var(--orange); }
+
+/* ── QUOTE — centered large quote ────────────────────────── */
+section.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--light-blue);
+  padding: 80px 120px;
+}
+
+section.quote::before { display: none; }
+
+section.quote blockquote {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--black);
+  border-left: none;
+  padding: 0;
+  max-width: 84%;
+  line-height: 1.35;
+}
+
+section.quote blockquote > p {
+  font-size: inherit;
+  margin: 0;
+}
+
+section.quote section::after { color: var(--blue); }
+
+/* ── LIGHT-BLUE — pale blue bg, black text ───────────────── */
+section.light-blue {
+  background-color: var(--light-blue);
+  color: var(--black);
+}
+
+section.light-blue h1 { color: var(--blue); }
+section.light-blue h2 { color: var(--blue); }
+
+/* ── LIGHT-GREEN — pale green bg, black text ─────────────── */
+section.light-green {
+  background-color: var(--light-green);
+  color: var(--black);
+}
+
+section.light-green h1 { color: var(--green); }
+section.light-green h2 { color: var(--green); }
+
+/* ── LIGHT-ORANGE — pale orange bg, black text ───────────── */
+section.light-orange {
+  background-color: var(--light-orange);
+  color: var(--black);
+}
+
+section.light-orange h1 { color: var(--orange); }
+section.light-orange h2 { color: var(--orange); }
+
+/* ── LIGHT-YELLOW — pale yellow bg, black text ───────────── */
+section.light-yellow {
+  background-color: var(--light-yellow);
+  color: var(--black);
+}
+
+section.light-yellow h1 { color: var(--black); }
+section.light-yellow h2 { color: var(--orange); }
+
+/* ── LIGHT-PINK — pale pink bg, black text ───────────────── */
+section.light-pink {
+  background-color: var(--light-pink);
+  color: var(--black);
+}
+
+section.light-pink h1 { color: var(--black); }
+section.light-pink h2 { color: var(--orange); }
+
+/* ============================================================
+   LAYOUT HELPERS — use as HTML <div> elements in Markdown
+   ============================================================ */
+
+/* Two equal columns
+   <div class="columns"><div>
+
+   Left col
+
+   </div><div>
+
+   Right col
+
+   </div></div>
+*/
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Three equal columns */
+.columns-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Wide left (2/3 content + 1/3 sidebar) */
+.columns-wide-left {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Wide right (1/3 sidebar + 2/3 content) */
+.columns-wide-right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ── Highlight / callout boxes ────────────────────────────── */
+.highlight {
+  background: var(--light-orange);
+  border-left: 5px solid var(--orange);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-blue {
+  background: var(--light-blue);
+  border-left: 5px solid var(--blue);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-green {
+  background: var(--light-green);
+  border-left: 5px solid var(--green);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-yellow {
+  background: var(--light-yellow);
+  border-left: 5px solid var(--yellow);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* ── Pill / tag labels ────────────────────────────────────── */
+.tag {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 3px 14px;
+  border-radius: 99px;
+  line-height: 1.6;
+}
+
+.tag-blue   { background: var(--blue); }
+.tag-green  { background: var(--green); }
+.tag-black  { background: var(--black); }
+.tag-yellow { background: var(--yellow); color: var(--black); }
+
+/* ── Text helpers ─────────────────────────────────────────── */
+.center { text-align: center; }
+.right  { text-align: right; }
+.small  { font-size: 18px; line-height: 1.5; }
+.large  { font-size: 32px; }
+.muted  { color: #999; }
+.caps   { text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+
+/* ============================================================
+   ICONS — FontAwesome 6 Solid (free)
+   Npuls brand specifies FA Sharp Solid (FA6 Pro).
+   FA6 free "solid" is the closest available alternative.
+   Replace the @import with your FA Pro kit URL for sharp icons.
+   ============================================================ */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+/* Icons inherit text color by default */
+.fa-solid,
+.fa-regular,
+.fa-brands { color: inherit; }
+
+/* Colour modifiers — apply to any parent wrapper or the <i> itself */
+.icon-orange,
+.icon-orange .fa-solid { color: var(--orange); }
+
+.icon-blue,
+.icon-blue .fa-solid   { color: var(--blue); }
+
+.icon-green,
+.icon-green .fa-solid  { color: var(--green); }
+
+.icon-yellow,
+.icon-yellow .fa-solid { color: var(--yellow); }
+
+.icon-black,
+.icon-black .fa-solid  { color: var(--black); }
+
+/* Icon card — vertical stack for feature grids
+   Wrap in .columns or .columns-3
+   <div class="icon-card icon-orange">
+     <i class="fa-solid fa-graduation-cap fa-3x"></i>
+     <strong>Leren</strong>
+     <p>Omschrijving van de feature.</p>
+   </div>
+*/
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.icon-card .fa-solid {
+  font-size: 52px;
+  color: var(--orange);
+}
+
+.icon-card strong {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.icon-card p,
+.icon-card span {
+  font-size: 19px;
+  line-height: 1.45;
+  margin: 0;
+  color: inherit;
+}
+
+/* Icon row — one icon + text per line
+   <div class="icon-row icon-blue">
+     <i class="fa-solid fa-check"></i> Punt één
+   </div>
+*/
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.icon-row .fa-solid {
+  font-size: 26px;
+  width: 34px;
+  text-align: center;
+  flex-shrink: 0;
+  color: var(--orange);
+}
+
+/* ============================================================
+   VORMENTAAL — Geometric Shape Language
+   Geometric forms used to support text and create visual
+   interest. Shapes may be combined.
+
+   Section-level: <!-- _class: vormentaal -->
+   Modifier classes: add after a space in _class value
+     <!-- _class: vormentaal yellow-circle -->
+     <!-- _class: vormentaal-split split-blue -->
+   ============================================================ */
+
+/* ── Large circle decoration (bottom-right corner bleed) ─── */
+section.vormentaal::after {
+  content: '';
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  background: var(--orange);
+  right: -150px;
+  bottom: -150px;
+  opacity: 0.13;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure slide content sits above the shape layer */
+section.vormentaal > * { position: relative; z-index: 1; }
+
+/* Circle colour variants */
+section.vormentaal.yellow-circle::after { background: var(--yellow); opacity: 0.5; }
+section.vormentaal.blue-circle::after   { background: var(--blue);   opacity: 0.15; }
+section.vormentaal.green-circle::after  { background: var(--green);  opacity: 0.18; }
+section.vormentaal.pink-circle::after   { background: var(--pink);   opacity: 0.7; }
+
+/* Move circle to top-left */
+section.vormentaal.circle-left::after {
+  right: auto; bottom: auto;
+  left: -150px; top: -150px;
+}
+
+/* ── Diagonal colour-band split (right third of slide) ───── */
+section.vormentaal-split::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 0;
+  width: 44%;
+  height: 100%;
+  background: var(--yellow);
+  clip-path: polygon(22% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+section.vormentaal-split > * { position: relative; z-index: 1; }
+
+/* Band colour variants */
+section.vormentaal-split.split-orange::after { background: var(--orange); }
+section.vormentaal-split.split-blue::after   { background: var(--blue); }
+section.vormentaal-split.split-green::after  { background: var(--green); }
+section.vormentaal-split.split-pink::after   { background: var(--pink); }
+
+/* ── Statement / one-liner slide ─────────────────────────── */
+/* Large bold text with a coloured backing bar behind the heading.
+   <!-- _class: vormentaal-statement -->
+   # Hartslag voor beter onderwijs
+*/
+section.vormentaal-statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white);
+}
+
+section.vormentaal-statement h1 {
+  font-size: 60px;
+  line-height: 1.15;
+  color: var(--white);
+  background: var(--orange);
+  display: inline;
+  padding: 6px 20px 10px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  max-width: fit-content;
+}
+
+section.vormentaal-statement h2 {
+  font-size: 28px;
+  color: var(--orange);
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* Colour variants for the statement backing */
+section.vormentaal-statement.statement-blue   h1 { background: var(--blue); }
+section.vormentaal-statement.statement-green  h1 { background: var(--green); }
+section.vormentaal-statement.statement-yellow h1 { background: var(--yellow); color: var(--black); }
+section.vormentaal-statement.statement-black  h1 { background: var(--black); }
+
+/* ── Decorative multi-circle accent (top-right) ──────────── */
+/* <!-- _class: vormentaal-circles --> */
+section.vormentaal-circles::after {
+  content: '';
+  position: absolute;
+  right: 64px;
+  top: 48px;
+  width: 180px;
+  height: 180px;
+  background:
+    radial-gradient(circle 32px at 32px  32px,  var(--orange) 100%, transparent 100%),
+    radial-gradient(circle 20px at 100px 24px,  var(--blue)   100%, transparent 100%),
+    radial-gradient(circle 24px at 60px  110px, var(--yellow)  100%, transparent 100%),
+    radial-gradient(circle 16px at 140px 120px, var(--green)  100%, transparent 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+section.vormentaal-circles > * { position: relative; z-index: 1; }
+
+/* ── Geometric corner frame (top-right L-bracket) ────────── */
+/* <!-- _class: vormentaal-frame --> */
+section.vormentaal-frame::after {
+  content: '';
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 80px;
+  height: 80px;
+  border-top: 8px solid var(--orange);
+  border-right: 8px solid var(--orange);
+  z-index: 0;
+  pointer-events: none;
+}
+
+section.vormentaal-frame > * { position: relative; z-index: 1; }
+
+/* ============================================================
+   INLINE SHAPE HELPERS
+   Use inside markdown as raw HTML elements.
+   ============================================================ */
+
+/* Shape bar — coloured rectangle backing for one-liner text
+   <div class="shape-bar">Hartslag voor beter onderwijs</div>
+   <div class="shape-bar blue">Een betrokken community</div>
+*/
+.shape-bar {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.3;
+  padding: 10px 24px;
+  margin-bottom: 10px;
+}
+
+.shape-bar.blue   { background: var(--blue); }
+.shape-bar.green  { background: var(--green); }
+.shape-bar.yellow { background: var(--yellow); color: var(--black); }
+.shape-bar.black  { background: var(--black); }
+.shape-bar.pink   { background: var(--pink); color: var(--black); }
+
+/* Shape bar — skewed variant for extra dynamic feel */
+.shape-bar.skew {
+  transform: skewX(-4deg);
+  display: inline-block;
+}
+
+.shape-bar.skew > * { display: inline-block; transform: skewX(4deg); }
+
+/* Decorative filled dot / circle
+   <span class="dot orange"></span>
+   <span class="dot blue large"></span>
+*/
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--orange);
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.dot.blue   { background: var(--blue); }
+.dot.green  { background: var(--green); }
+.dot.yellow { background: var(--yellow); }
+.dot.black  { background: var(--black); }
+.dot.pink   { background: var(--pink); }
+
+.dot.large  { width: 24px; height: 24px; }
+.dot.xlarge { width: 40px; height: 40px; }
+
+/* Divider line with coloured dots — a Npuls-flavoured <hr>
+   <div class="dot-rule"></div>
+*/
+.dot-rule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.dot-rule::before {
+  content: '';
+  display: block;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+}
+
+.dot-rule::after {
+  content: '';
+  display: block;
+  flex: 1;
+  height: 2px;
+  background: var(--orange);
+  opacity: 0.3;
+}
+
+/* ============================================================
+   ADDITIONAL COLOR VARIANTS
+   ============================================================ */
+
+/* ── ORANGE — content slides on orange (non-cover) ─────────
+   Unlike .cover, this does NOT bottom-align content.
+   Use for body/content slides with orange background.        */
+section.orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+section.orange::before { background: rgba(255, 255, 255, 0.3); }
+
+section.orange h1 { color: var(--white); }
+section.orange h2 { color: var(--yellow); }
+section.orange h3 { color: rgba(255, 255, 255, 0.75); }
+
+section.orange strong   { color: var(--yellow); }
+section.orange em       { color: rgba(255, 255, 255, 0.8); }
+section.orange blockquote { color: var(--white); border-color: var(--yellow); }
+section.orange code { background: rgba(255, 255, 255, 0.15); color: var(--white); }
+
+section.orange ul > li::marker,
+section.orange ol > li::marker { color: var(--yellow); }
+
+section.orange section::after { color: rgba(255, 255, 255, 0.6); }
+section.orange footer { color: rgba(255, 255, 255, 0.55); }
+section.orange a { color: var(--yellow); border-color: var(--yellow); }
+
+section.orange td { border-bottom-color: rgba(255, 255, 255, 0.2); }
+section.orange tr:nth-child(even) td { background: rgba(255, 255, 255, 0.1); }
+
+/* ── PINK — brand pink (#F4D9DC) bg, black text ────────────
+   Used in the Basispresentatie for intro, about, and outro.  */
+section.pink {
+  background-color: var(--pink);
+  color: var(--black);
+}
+
+section.pink::before { background: var(--orange); }
+
+section.pink h1 { color: var(--black); }
+section.pink h2 { color: var(--orange); }
+section.pink h3 { color: var(--blue); }
+
+section.pink strong { color: var(--orange); }
+section.pink blockquote { color: var(--blue); }
+
+section.pink ul > li::marker,
+section.pink ol > li::marker { color: var(--orange); }
+
+section.pink section::after { color: var(--orange); }
+section.pink footer { color: rgba(0, 0, 0, 0.45); }
+
+/* ============================================================
+   LAYOUT — Split image (half illustration, half content)
+   Use with <!-- _class: orange split-image --> or any bg class.
+
+   Markdown usage:
+     <!-- _class: orange split-image -->
+
+     <div class="image-panel">
+
+     ![](../assets/illustraties/png/Kennisdeling.png)
+
+     </div>
+
+     # Titel
+     Bodytekst hier.
+   ============================================================ */
+section.split-image {
+  padding-left: 52%;
+}
+
+section.split-image .image-panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+section.split-image .image-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* ── Right-panel variant: content left, image right ─────── */
+section.split-image-right {
+  padding-right: 52%;
+}
+
+section.split-image-right .image-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+section.split-image-right .image-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* ============================================================
+   ASSET POSITIONING — place vormentaal assets in corners
+   Usage: <img src="../assets/vormentaal/png/Asset 11.png" class="asset-br" />
+   ============================================================ */
+
+img.asset-br {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 300px !important;
+  height: 300px !important;
+  max-width: 300px !important;
+  max-height: 300px !important;
+  z-index: 0;
+}
+
+img.asset-bl {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 300px !important;
+  height: 300px !important;
+  max-width: 300px !important;
+  max-height: 300px !important;
+  z-index: 0;
+}
+
+img.asset-tr {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  width: 260px !important;
+  height: 260px !important;
+  max-width: 260px !important;
+  max-height: 260px !important;
+  z-index: 0;
+}
+
+img.asset-tl {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 260px !important;
+  height: 260px !important;
+  max-width: 260px !important;
+  max-height: 260px !important;
+  z-index: 0;
+}
+
+img.asset-center-r {
+  position: absolute !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 320px !important;
+  height: 320px !important;
+  max-width: 320px !important;
+  max-height: 320px !important;
+  z-index: 0;
+}
+
+/* Smaller asset variants */
+img.asset-br.sm { width: 200px !important; height: 200px !important; max-width: 200px !important; max-height: 200px !important; }
+img.asset-bl.sm { width: 200px !important; height: 200px !important; max-width: 200px !important; max-height: 200px !important; }
+img.asset-tr.sm { width: 180px !important; height: 180px !important; max-width: 180px !important; max-height: 180px !important; }
+
+/* Decorative asset — ensure content appears above it */
+section:has(img.asset-br) > *:not(img.asset-br),
+section:has(img.asset-bl) > *:not(img.asset-bl),
+section:has(img.asset-tr) > *:not(img.asset-tr),
+section:has(img.asset-tl) > *:not(img.asset-tl),
+section:has(img.asset-center-r) > *:not(img.asset-center-r) {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   ILLUSTRATION SIZING
+   Use inside .columns or .columns-wide-left for sized images.
+   ============================================================ */
+
+img.illustration {
+  display: block !important;
+  max-height: 380px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+img.illustration-sm {
+  display: block !important;
+  max-height: 220px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+img.illustration-lg {
+  display: block !important;
+  max-height: 520px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+img.illustration-fill {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* ============================================================
+   FOUR-COLUMN GRID
+   ============================================================ */
+
+.columns-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ============================================================
+   STEP NUMBERS — 01, 02, 03 prefix for numbered items
+   ============================================================ */
+
+.step-number {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 8px;
+}
+
+/* On light backgrounds */
+section.white .step-number,
+section .step-number.dark { color: rgba(0, 0, 0, 0.18); }
+.step-number.orange { color: var(--orange); opacity: 1; }
+.step-number.blue   { color: var(--blue);   opacity: 1; }
+
+/* ============================================================
+   STAT DISPLAY — large numbers / key figures
+   ============================================================ */
+
+.stat {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 1;
+  color: var(--orange);
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 400;
+  color: inherit;
+  opacity: 0.75;
+  margin-bottom: 20px;
+}
+
+section.orange .stat,
+section.cover  .stat { color: var(--yellow); }
+section.dark   .stat { color: var(--orange); }
+section.blue   .stat { color: var(--yellow); }
+section.green  .stat { color: var(--white);  }
+section.pink   .stat { color: var(--orange); }
+
+/* ============================================================
+   AGENDA / TABLE OF CONTENTS
+   Numbered list with visual spacing
+   ============================================================ */
+
+ol.agenda {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: agenda-counter;
+}
+
+ol.agenda li {
+  counter-increment: agenda-counter;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0;
+}
+
+ol.agenda li::before {
+  content: counter(agenda-counter, decimal-leading-zero);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--orange);
+  flex-shrink: 0;
+  width: 36px;
+}
+
+/* ============================================================
+   TOPIC CARD — used in 4-column topic grids
+   ============================================================ */
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  border-top: 4px solid var(--orange);
+}
+
+.topic-card img {
+  max-height: 100px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  display: block;
+}
+
+.topic-card strong {
+  font-size: 20px;
+  display: block;
+  color: var(--black);
+}
+
+.topic-card p {
+  font-size: 17px;
+  margin: 0;
+  color: #444;
+}
+
+section.orange .topic-card,
+section.light-orange .topic-card { background: rgba(255, 255, 255, 0.25); }
+section.orange .topic-card strong { color: var(--white); }
+section.orange .topic-card p      { color: rgba(255,255,255,0.8); }
