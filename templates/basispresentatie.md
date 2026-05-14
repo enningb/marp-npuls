@@ -2,7 +2,7 @@
 marp: true
 theme: npuls
 paginate: true
-footer: Npuls · Basispresentatie
+footer: Npuls · Basispresentatie 
 ---
 <!-- _class: cover -->
 
@@ -33,7 +33,6 @@ Naam Spreker · Rol · Maand Jaar
 
 <!--
   SECTIEDELER
-  Gebruik: <!-- _class: section-title -->
   Zwarte achtergrond met oranje zijbalk.
 -->
 
@@ -66,7 +65,9 @@ In deze presentatie nemen we je mee in het vernieuwde Npuls-verhaal, zodat jij g
 </div>
 <div>
 
-<img src="../assets/extracted/content/slide03_communicatie_illustratie.svg" class="illustration" />
+<div class="img-tile blue">
+  <img src="../assets/extracted/content/slide03_communicatie_illustratie.svg" class="illustration-sm" />
+</div>
 
 </div>
 </div>
@@ -95,7 +96,7 @@ hogescholen en universiteiten aan de transformatie van het onderwijs.
 **Samen** bouwen we aan een die blijvend bijdraagt aan een
 veerkrachtige samenleving, brede welvaart en een sterke economie.
 
-<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%208.png" class="asset-br" />
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/svg/streepjesoranje.svg" class="asset-br sm" />
 
 ---
 
@@ -168,7 +169,6 @@ Npuls duurt 8 jaar (2023–2031) en wordt gefinancierd door het Nationaal Groeif
 </div>
 </div>
 
-<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%208.png" class="asset-br" />
 
 ---
 
@@ -227,7 +227,7 @@ De inhoud van het onderwijs actueel houdt en afstemt op nieuwe behoeften.
 
 <div class="image-panel">
 
-![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/layout-shapes/vorm_einddia_1.svg)
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/content/slide03_communicatie_illustratie.svg)
 
 </div>
 
@@ -237,15 +237,12 @@ De inhoud van het onderwijs actueel houdt en afstemt op nieuwe behoeften.
 <!--
   SPLIT IMAGE — illustratie links, tekst rechts
   Gebruik: <!-- _class: orange split-image -->
-  Zet de illustratie in <div class="image-panel"> voor de H1.
--->
 
 <!-- _class: orange split-image -->
 
 <div class="image-panel">
 
 ![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Kennisdeling.png)
-
 </div>
 
 # Transformatie van het onderwijs
@@ -369,7 +366,6 @@ De rol van data blijft onderbelicht. Dit zet **publieke waarden** onder druk en 
 
 <div class="columns-4">
 <div class="topic-card">
-
 <img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/sectordoelen/07%20-%20Digitale%20geletterdheid%20lerenden.jpg" />
 
 **AI en data-geletterdheid**

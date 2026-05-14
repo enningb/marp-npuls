@@ -52,6 +52,19 @@
      .icon-card    — vertical icon + label block (use in .columns)
      .icon-row     — inline icon + label list item
 
+   Logo helpers:
+     img.logo           — inline logo, 40px tall, auto width
+     img.logo-sm        — 28px tall variant
+     img.logo-lg        — 56px tall variant
+     img.logo-br        — fixed bottom-right corner, 36px tall
+     img.logo-tr        — fixed top-right corner, 36px tall
+
+     Recommended src values:
+       Light bg:   …/npuls_logo_zwart.svg
+       Dark bg:    …/npuls_logo_wit.svg
+       Color bg:   …/npuls_logo_oranje_donker.svg
+     Full URLs stored in CSS vars: --logo-zwart, --logo-wit, --logo-oranje-donker, --logo-beeldmerk
+
    Layout helpers (use inside markdown as HTML divs):
      <div class="columns">…</div>      — 50/50 columns
      <div class="columns-3">…</div>    — three equal columns
@@ -84,6 +97,12 @@
   --white:         #FFFFFF;
   --font-sans:     'General Sans', Arial, Helvetica, sans-serif;
   --font-serif:    'Cooper Light BT', 'Cooper Light', Georgia, serif;
+
+  /* Logo URLs — use as src in <img> or as background-image */
+  --logo-zwart:         'https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_zwart.svg';
+  --logo-wit:           'https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_wit.svg';
+  --logo-oranje-donker: 'https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_oranje_donker.svg';
+  --logo-beeldmerk:     'https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_beeldmerk_oranje.svg';
 }
 
 /* ── Base slide ───────────────────────────────────────────── */
@@ -1217,6 +1236,107 @@ img.illustration-fill {
 }
 
 /* ============================================================
+   ROUNDED IMAGE HELPERS
+   On an <img>:
+     <img src="…" class="rounded" />          — 12px radius
+     <img src="…" class="rounded-lg" />       — 24px radius
+     <img src="…" class="rounded-full" />     — circle/oval
+
+   As a wrapper div (needed when overflow clipping matters,
+   e.g. inside .columns or .topic-card):
+     <div class="img-frame">
+       <img src="…" />
+     </div>
+
+     <div class="img-frame rounded-lg">
+       <img src="…" />
+     </div>
+   ============================================================ */
+
+img.rounded      { border-radius: 12px !important; }
+img.rounded-lg   { border-radius: 24px !important; }
+img.rounded-full { border-radius: 50% !important;  }
+
+.img-frame {
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+  line-height: 0;
+}
+
+.img-frame.rounded-lg   { border-radius: 24px; }
+.img-frame.rounded-full { border-radius: 50%; }
+
+.img-frame img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 0 !important;
+}
+
+/* ============================================================
+   IMAGE TILE — image centred in a coloured rounded rectangle
+   Default colour: light-orange. Override with a modifier class
+   or inline style="background: #hex".
+
+   Usage:
+     <div class="img-tile">
+       <img src="…" />
+     </div>
+
+     <div class="img-tile blue">
+       <img src="…" />
+     </div>
+
+     <div class="img-tile" style="background: #3D68EC;">
+       <img src="…" />
+     </div>
+
+   Size modifiers: add .sm or .lg
+   Colour modifiers: orange · blue · green · yellow · pink ·
+                     dark · white · light-orange · light-blue ·
+                     light-green · light-pink
+   ============================================================ */
+
+.img-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-orange);
+  border-radius: 16px;
+  padding: 28px;
+  box-sizing: border-box;
+}
+
+.img-tile img {
+  display: block !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
+  object-fit: contain;
+  border-radius: 0 !important;
+}
+
+/* Size variants */
+.img-tile.sm { padding: 16px; border-radius: 10px; }
+.img-tile.lg { padding: 40px; border-radius: 24px; }
+
+/* Colour variants */
+.img-tile.orange       { background: var(--orange); }
+.img-tile.blue         { background: var(--blue); }
+.img-tile.green        { background: var(--green); }
+.img-tile.yellow       { background: var(--yellow); }
+.img-tile.pink         { background: var(--pink); }
+.img-tile.dark         { background: var(--black); }
+.img-tile.white        { background: var(--white); border: 1px solid rgba(0,0,0,0.08); }
+.img-tile.light-orange { background: var(--light-orange); }
+.img-tile.light-blue   { background: var(--light-blue); }
+.img-tile.light-green  { background: var(--light-green); }
+.img-tile.light-pink   { background: var(--light-pink); }
+
+/* ============================================================
    FOUR-COLUMN GRID
    ============================================================ */
 
@@ -1347,3 +1467,75 @@ section.orange .topic-card,
 section.light-orange .topic-card { background: rgba(255, 255, 255, 0.25); }
 section.orange .topic-card strong { color: var(--white); }
 section.orange .topic-card p      { color: rgba(255,255,255,0.8); }
+
+/* ============================================================
+   LOGO HELPERS
+   Inline sizing:
+     <img src="…/npuls_logo_zwart.svg" class="logo" />
+   Corner-pinned (absolute):
+     <img src="…/npuls_logo_wit.svg" class="logo-br" />
+
+   Pick the right variant for the slide background:
+     Light slides  → npuls_logo_zwart.svg
+     Dark slides   → npuls_logo_wit.svg
+     Colored slides → npuls_logo_oranje_donker.svg
+
+   Full src URLs are in the CSS variables:
+     var(--logo-zwart), var(--logo-wit),
+     var(--logo-oranje-donker), var(--logo-beeldmerk)
+   ============================================================ */
+
+img.logo {
+  height: 40px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 40px !important;
+  display: block;
+}
+
+img.logo-sm { height: 28px !important; max-height: 28px !important; }
+img.logo-lg { height: 56px !important; max-height: 56px !important; }
+
+img.logo-br {
+  position: absolute !important;
+  right: 40px !important;
+  bottom: 18px !important;
+  height: 36px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 36px !important;
+  z-index: 2;
+}
+
+img.logo-tr {
+  position: absolute !important;
+  right: 40px !important;
+  top: 18px !important;
+  height: 36px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 36px !important;
+  z-index: 2;
+}
+
+img.logo-bl {
+  position: absolute !important;
+  left: 40px !important;
+  bottom: 18px !important;
+  height: 36px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 36px !important;
+  z-index: 2;
+}
+
+img.logo-tl {
+  position: absolute !important;
+  left: 40px !important;
+  top: 18px !important;
+  height: 36px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 36px !important;
+  z-index: 2;
+}

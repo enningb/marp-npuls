@@ -35,6 +35,12 @@
   --white:         #FFFFFF;
   --font-sans:     'General Sans', Arial, Helvetica, sans-serif;
   --font-serif:    'Cooper Light BT', 'Cooper Light', Georgia, serif;
+
+  /* Logo URLs — use as src in <img> or as background-image */
+  --logo-zwart:         'https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_zwart.svg';
+  --logo-wit:           'https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_wit.svg';
+  --logo-oranje-donker: 'https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_logo_oranje_donker.svg';
+  --logo-beeldmerk:     'https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/logo/npuls_beeldmerk_oranje.svg';
 }
 
 /* ── Base slide — dark by default ────────────────────────── */
@@ -896,6 +902,67 @@ img.illustration    { display: block !important; max-height: 380px !important; w
 img.illustration-sm { display: block !important; max-height: 220px !important; width: auto !important; max-width: 100% !important; height: auto !important; margin: 0 auto; }
 img.illustration-lg { display: block !important; max-height: 520px !important; width: auto !important; max-width: 100% !important; height: auto !important; margin: 0 auto; }
 
+/* ── Rounded image helpers ───────────────────────────────── */
+
+img.rounded      { border-radius: 12px !important; }
+img.rounded-lg   { border-radius: 24px !important; }
+img.rounded-full { border-radius: 50% !important;  }
+
+.img-frame {
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+  line-height: 0;
+}
+
+.img-frame.rounded-lg   { border-radius: 24px; }
+.img-frame.rounded-full { border-radius: 50%; }
+
+.img-frame img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 0 !important;
+}
+
+/* ── Image tile ──────────────────────────────────────────── */
+
+.img-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-orange);
+  border-radius: 16px;
+  padding: 28px;
+  box-sizing: border-box;
+}
+
+.img-tile img {
+  display: block !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
+  object-fit: contain;
+  border-radius: 0 !important;
+}
+
+.img-tile.sm { padding: 16px; border-radius: 10px; }
+.img-tile.lg { padding: 40px; border-radius: 24px; }
+
+.img-tile.orange       { background: var(--orange); }
+.img-tile.blue         { background: var(--blue); }
+.img-tile.green        { background: var(--green); }
+.img-tile.yellow       { background: var(--yellow); }
+.img-tile.pink         { background: var(--pink); }
+.img-tile.dark         { background: var(--black); }
+.img-tile.white        { background: var(--white); border: 1px solid rgba(255,255,255,0.12); }
+.img-tile.light-orange { background: var(--light-orange); }
+.img-tile.light-blue   { background: var(--light-blue); }
+.img-tile.light-green  { background: var(--light-green); }
+.img-tile.light-pink   { background: var(--light-pink); }
+
 /* ── Columns-4 ───────────────────────────────────────────── */
 
 .columns-4 {
@@ -978,3 +1045,71 @@ ol.agenda li::before {
 .topic-card p { font-size: 17px; margin: 0; color: rgba(255,255,255,0.7); }
 
 section.orange .topic-card { background: rgba(255, 255, 255, 0.15); }
+
+/* ============================================================
+   LOGO HELPERS
+   Inline sizing:
+     <img src="…/npuls_logo_wit.svg" class="logo" />
+   Corner-pinned (absolute):
+     <img src="…/npuls_logo_wit.svg" class="logo-br" />
+
+   Pick the right variant for the slide background:
+     Dark slides   → npuls_logo_wit.svg
+     Light slides  → npuls_logo_zwart.svg
+     Colored slides → npuls_logo_oranje_donker.svg
+   ============================================================ */
+
+img.logo {
+  height: 40px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 40px !important;
+  display: block;
+}
+
+img.logo-sm { height: 28px !important; max-height: 28px !important; }
+img.logo-lg { height: 56px !important; max-height: 56px !important; }
+
+img.logo-br {
+  position: absolute !important;
+  right: 40px !important;
+  bottom: 18px !important;
+  height: 36px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 36px !important;
+  z-index: 2;
+}
+
+img.logo-tr {
+  position: absolute !important;
+  right: 40px !important;
+  top: 18px !important;
+  height: 36px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 36px !important;
+  z-index: 2;
+}
+
+img.logo-bl {
+  position: absolute !important;
+  left: 40px !important;
+  bottom: 18px !important;
+  height: 36px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 36px !important;
+  z-index: 2;
+}
+
+img.logo-tl {
+  position: absolute !important;
+  left: 40px !important;
+  top: 18px !important;
+  height: 36px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 36px !important;
+  z-index: 2;
+}
