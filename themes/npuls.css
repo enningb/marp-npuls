@@ -18,7 +18,7 @@
      blue           Brand blue bg, white text
      green          Brand green bg, white text
      yellow         Brand yellow bg, black text
-     section-title  Black bg with orange left bar — chapter divider
+     section-title  Yellow bg with black left bar — chapter divider
      light-blue     Pale blue bg, black text
      light-green    Pale green bg, black text
      light-orange   Pale orange bg, black text
@@ -297,6 +297,10 @@ footer {
   font-family: var(--font-sans);
   font-size: 15px;
   color: #999;
+  position: absolute;
+  left: 80px;
+  bottom: 10px;
+
 }
 
 /* ============================================================
@@ -450,8 +454,8 @@ section.section-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--yellow);
+  color: var(--yellow);
   padding-left: 104px;
 }
 
@@ -463,11 +467,11 @@ section.section-title::before {
   bottom: 0;
   width: 8px;
   height: 100%;
-  background: var(--orange);
+  background: var(--black);
 }
 
 section.section-title h1 {
-  color: var(--white);
+  color: var(--black);
   font-size: 72px;
   line-height: 1.1;
 }
@@ -478,8 +482,8 @@ section.section-title h2 {
   font-weight: 400;
 }
 
-section.section-title h3 { color: rgba(255, 255, 255, 0.55); font-weight: 400; }
-section.section-title section::after { color: var(--orange); }
+section.section-title h3 { color: rgba(0, 0, 0, 0.5); font-weight: 400; }
+section.section-title section::after { color: rgba(0, 0, 0, 0.4); }
 
 /* ── QUOTE — centered large quote ────────────────────────── */
 section.quote {

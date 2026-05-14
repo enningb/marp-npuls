@@ -2,28 +2,11 @@
 marp: true
 theme: npuls
 paginate: true
-footer: Npuls · Presentatietitel
+footer: Npuls · Basispresentatie
 ---
-
-<!--
-  BASISPRESENTATIE TEMPLATE
-  Gebaseerd op de Npuls Basispresentatie (Brand Guide 2025 v1.4)
-
-  Gebruik:
-    marp --theme ../themes/npuls.css --allow-local-files basispresentatie.md
-
-  Exporteer naar PDF:
-    marp --theme ../themes/npuls.css --allow-local-files --pdf basispresentatie.md
-
-  Slide-klassen activeer je met: <!-- _class: klassenaam -->
-  Meerdere klassen zijn mogelijk: <!-- _class: orange lead -->
--->
-
----
-
 <!-- _class: cover -->
 
-# Presentatietitel
+# Basispresentatie
 ## Ondertitel of domein
 
 Naam Spreker · Rol · Maand Jaar
@@ -64,6 +47,7 @@ Naam Spreker · Rol · Maand Jaar
   TEKST + ILLUSTRATIE RECHTS
   Standaard contentslide: titel linksboven, tekst links, illustratie rechts.
   Pas de illustratie aan naar een passend bestand uit assets/illustraties/png/
+
 -->
 
 # Communicatie voor Npuls fase 2
@@ -82,7 +66,7 @@ In deze presentatie nemen we je mee in het vernieuwde Npuls-verhaal, zodat jij g
 </div>
 <div>
 
-<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Presenteren.png" class="illustration" />
+<img src="../assets/extracted/content/slide03_communicatie_illustratie.svg" class="illustration" />
 
 </div>
 </div>
@@ -91,7 +75,6 @@ In deze presentatie nemen we je mee in het vernieuwde Npuls-verhaal, zodat jij g
 
 <!--
   STATEMENT / TAGLINE — groen, gecentreerd
-  Gebruik: <!-- _class: green lead -->
   Groot statement dat het merk vertegenwoordigt.
 -->
 
@@ -101,11 +84,6 @@ In deze presentatie nemen we je mee in het vernieuwde Npuls-verhaal, zodat jij g
 
 ---
 
-<!--
-  OVER NPULS — roze achtergrond, groot tekstblok
-  Gebruik: <!-- _class: pink -->
-  Asset 8 (roze bg, oranje golven) staat als decoratief element rechtsonder.
--->
 
 <!-- _class: pink -->
 
@@ -114,7 +92,7 @@ In deze presentatie nemen we je mee in het vernieuwde Npuls-verhaal, zodat jij g
 In het Nationaal Groeifondsprogramma Npuls werken alle publieke mbo-scholen,
 hogescholen en universiteiten aan de transformatie van het onderwijs.
 
-**Samen** bouwen we aan een onderwijssector die blijvend bijdraagt aan een
+**Samen** bouwen we aan een die blijvend bijdraagt aan een
 veerkrachtige samenleving, brede welvaart en een sterke economie.
 
 <img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%208.png" class="asset-br" />
@@ -136,7 +114,6 @@ veerkrachtige samenleving, brede welvaart en een sterke economie.
 
 Npuls duurt 8 jaar (2023–2031) en wordt gefinancierd door het Nationaal Groeifonds.
 
-Het Ministerie van OCW is het uitvoerende ministerie.
 
 </div>
 <div>
@@ -144,11 +121,11 @@ Het Ministerie van OCW is het uitvoerende ministerie.
 <div class="stat">€640M</div>
 <div class="stat-label">beschikbaar budget</div>
 
-<div class="stat">560</div>
-<div class="stat-label">miljoen vanuit NGF</div>
+<div class="stat">€560M</div>
+<div class="stat-label">vanuit NGF</div>
 
-<div class="stat">80</div>
-<div class="stat-label">miljoen cofinanciering instellingen</div>
+<div class="stat">€80M</div>
+<div class="stat-label">co-financiering instellingen</div>
 
 </div>
 </div>
@@ -159,7 +136,6 @@ Het Ministerie van OCW is het uitvoerende ministerie.
 
 <!--
   SECTIEDELER VARIANT — groen
-  Gebruik: <!-- _class: green lead -->
 -->
 
 <!-- _class: green lead -->
@@ -171,11 +147,9 @@ Het Ministerie van OCW is het uitvoerende ministerie.
 
 <!--
   DONKERE SLIDE MET BULLETS + ILLUSTRATIE
-  Gebruik: <!-- _class: dark -->
-  Tekst links, illustratie rechts.
--->
+    Tekst links, illustratie rechts. -->
 
-<!-- _class: dark -->
+<!-- _class: white -->
 
 # We hebben in de samenleving te maken met:
 
@@ -191,15 +165,16 @@ Het Ministerie van OCW is het uitvoerende ministerie.
 <div>
 
 <img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/illustraties/png/Connecties.png" class="illustration" />
+</div>
+</div>
 
-</div>
-</div>
+<img src="https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/vormentaal/png/Asset%208.png" class="asset-br" />
 
 ---
 
 <!--
   DRIE GENUMMERDE KOLOMMEN — oranje achtergrond
-  Gebruik: <!-- _class: orange -->
+  
   Gebruik .step-number voor de 01 / 02 / 03 prefix.
 -->
 
@@ -248,6 +223,14 @@ De inhoud van het onderwijs actueel houdt en afstemt op nieuwe behoeften.
 
 # Waar werken we naartoe?
 ## De toekomst van het vervolgonderwijs.
+
+
+<div class="image-panel">
+
+![](https://raw.githubusercontent.com/enningb/marp-npuls/main/assets/extracted/layout-shapes/vorm_einddia_1.svg)
+
+</div>
+
 
 ---
 
